@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData moduleName="xgLogFile" TerseType="1">
+<i>2</i>
+<PointerList>
+	<EFileSpec>
+		<s>"KernelLog"</s>
+		<s>""</s>
+		<s>"EKernel&lt;!E42:Event.Sequence&gt;.log"</s>
+		<i>1048576</i>
+		<i>5</i>
+		<i>0</i>
+		<i>1</i>
+		<i>1</i>
+		<i>0</i>
+		<s>""</s>
+	</EFileSpec>
+</PointerList>
+</PersistedData>

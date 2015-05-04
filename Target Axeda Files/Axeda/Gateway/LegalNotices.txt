@@ -1,0 +1,16 @@
+Copyright © 2001-2014, Axeda Corporation. All rights reserved.
+Portions of Axeda ® protected by US patent Nos. 6,757,714, 7,046,134, 7,117,239, 7,149,792, 7,185,014, and 8,065,397; and EU Patent Nos.: 1,350,367 and 1,305,712.
+
+Axeda Corporation
+25 Forbes Boulevard
+Foxborough, MA 02035
+USA
+(508) 337-9200
+
+Axeda® M2M Cloud Service, Axeda® Platform, and Axeda® Connected Product Management Applications (“Axeda Products”), and Questra® IDM software (“IDM Software”) are protected by contract law, copyright laws, and international treaties. Axeda Products and IDM Software are supplied under license and/or services contracts with Axeda’s customers and its resellers’ customers, and only users authorized under the applicable contract are permitted to access and use the Axeda Products and IDM Software. Unauthorized use and distribution may result in civil and criminal penalties. Portions of the software are protected by the following United States patents: #6757714, #7046134, #7117239, #7149792, #7185014, and #8065397; and the following EU patents: #1350367, #1305712.
+
+Use, duplication, or disclosure of the Axeda software and Axeda modifications to the Axeda software, by the U.S. government is subject to FAR 12.211 and 12.212 which state that the Government shall acquire only the technical data and the rights in that data customarily provided to the public with a commercial item or process and commercial computer software or commercial computer software documentation shall be acquired by the Government under licenses customarily provided to the public to the extent such licenses are consistent with Federal law.
+
+“Axeda” is a registered trademark of Axeda Corporation.  The Axeda logo, "Firewall-Friendly", "M2Me", and “Wireless Control Center” are trademarks of Axeda Corporation.  All rights reserved. All third party brand or product names included herein are the trademarks or registered trademarks of their respective companies or organizations.
+
+Portions of the Axeda Products include one or more open source or other third party software programs. Authorized customers can refer to the Open_Source_License_Requirements.pdf available through the Axeda Support Site for important notices and licensing information related to such programs.

@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<MobileDRMConfig>
+<v>1</v>
+<Debug>1</Debug>
+<ImportFileRoot>./AgentImports</ImportFileRoot>
+<ExportFileRoot>./AgentExports</ExportFileRoot>
+<WorkingFileRoot>./AgentImports</WorkingFileRoot>
+</MobileDRMConfig>

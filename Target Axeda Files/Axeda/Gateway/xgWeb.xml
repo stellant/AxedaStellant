@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData moduleName="xgWeb" TerseType="1">
+	<ServerConfig root="WebPages" desc="" localClientsOnly="0" >
+		<License key="" mn="" sn="">
+		</License>
+	</ServerConfig>
+	<HTTPConfig port="8085">
+	</HTTPConfig>
+	<SSLConfig port="443" enforced="0" level="2" cipherSuites="">
+	</SSLConfig>
+	<ProxyConfig enabled="0" override="1" forwardURL="">
+		<CacheConfig enabled="1" dirlevels="4" expire="3600">
+			<SMCacheConfig enabled="1" servlet="" expire="-1">
+			</SMCacheConfig>
+		</CacheConfig>
+	</ProxyConfig>
+</PersistedData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AxedaConfiguration>
+  <FilePaths>
+    <workingdir>/home/Axeda/Gateway/</workingdir>
+    <deployconfigfile>/home/Axeda/Gateway/xgDeployConfig.xml</deployconfigfile>
+    <enterpriseproxyfile>/home/Axeda/Gateway/xgEnterpriseProxy.xml</enterpriseproxyfile>
+    <encryptiontool>/home/Axeda/Gateway/EProtect</encryptiontool>
+    <shutdowntool>/home/Axeda/Gateway/EShutdown</shutdowntool>
+    <licencefile>/home/Axeda/Gateway/xgLicense.xml</licencefile>
+    <gatewaytool>/home/Axeda/Gateway/xgate</gatewaytool>
+    <provisioningfile>/home/Axeda/Gateway/provisioning.xml</provisioningfile>
+    <uploadfile>/home/Axeda/Gateway/Upload.xml</uploadfile>
+  </FilePaths>
+</AxedaConfiguration>

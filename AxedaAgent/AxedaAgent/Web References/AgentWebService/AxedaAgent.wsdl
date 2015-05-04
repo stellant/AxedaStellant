@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:typens="http://axeda.com/agent/api/type" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:names="http://axeda.com/agent/api" targetNamespace="http://axeda.com/agent/api" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://axeda.com/agent/api/type">
+      <xsd:simpleType name="ValueType">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Analog" />
+          <xsd:enumeration value="Digital" />
+          <xsd:enumeration value="String" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Quality">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Good" />
+          <xsd:enumeration value="Bad" />
+          <xsd:enumeration value="Uncertain" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="ShutdownMode">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Soft Restart" />
+          <xsd:enumeration value="Hard Restart" />
+          <xsd:enumeration value="System Reboot" />
+          <xsd:enumeration value="Stop Agent" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="TransferCommand">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="CancelAll" />
+          <xsd:enumeration value="PauseAll" />
+          <xsd:enumeration value="ResumeAll" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PackageState">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Running" />
+          <xsd:enumeration value="Idle" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PackageInstruction">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Uploading" />
+          <xsd:enumeration value="Downloading" />
+          <xsd:enumeration value="Other" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PackageStatusValues">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Queued" />
+          <xsd:enumeration value="Started" />
+          <xsd:enumeration value="Success" />
+          <xsd:enumeration value="Error" />
+          <xsd:enumeration value="Canceled" />
+          <xsd:enumeration value="Timeout" />
+          <xsd:enumeration value="Rolling Back" />
+          <xsd:enumeration value="Rollback Error" />
+          <xsd:enumeration value="Rollback Success" />
+          <xsd:enumeration value="Dependency Failed" />
+          <xsd:enumeration value="File Inhibited" />
+          <xsd:enumeration value="Undefined" />
+          <xsd:enumeration value="New" />
+          <xsd:enumeration value="Deployment Pending" />
+          <xsd:enumeration value="Downloaded" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="PackageError">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="Failed" />
+          <xsd:enumeration value="Version Mismatch" />
+          <xsd:enumeration value="Bad XML Format" />
+          <xsd:enumeration value="Unknown SOAP Method" />
+          <xsd:enumeration value="Unsupported Function" />
+          <xsd:enumeration value="Data Item Name Not Found" />
+          <xsd:enumeration value="Registry Name Not Found" />
+          <xsd:enumeration value="Registry File Read Error" />
+          <xsd:enumeration value="Invalid Dependency Expression" />
+          <xsd:enumeration value="No Files Found For Upload" />
+          <xsd:enumeration value="Only Some File Found For Upload" />
+          <xsd:enumeration value="Download Execution Failure" />
+          <xsd:enumeration value="File Archive Error" />
+          <xsd:enumeration value="File Read Error" />
+          <xsd:enumeration value="HTTP Status Error" />
+          <xsd:enumeration value="Chunk Checksum Error" />
+          <xsd:enumeration value="Connection Failure" />
+          <xsd:enumeration value="SOCKS Failure" />
+          <xsd:enumeration value="HTTP Failure" />
+          <xsd:enumeration value="SSL Failure" />
+          <xsd:enumeration value="Package Processing Aborted" />
+          <xsd:enumeration value="File Checksum Error" />
+          <xsd:enumeration value="Missing Partially Uploaded File" />
+          <xsd:enumeration value="Invalid Directory Name" />
+          <xsd:enumeration value="Restarting Of Agent Device Is Invalid" />
+          <xsd:enumeration value="Custom SOAP Function Error" />
+          <xsd:enumeration value="No Error" />
+          <xsd:enumeration value="Undefined" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="DeviceIdsResult">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="device" type="typens:DeviceIdentification" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DeviceIdentification">
+        <xsd:sequence>
+          <xsd:element name="model" type="xsd:string" />
+          <xsd:element name="serialNumber" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PackageStatusListResult">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="PackageStatus" type="typens:PackageStatus" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PackageStatus">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+          <xsd:element name="packageName" type="xsd:string" />
+          <xsd:element name="lastUpdated" type="xsd:dateTime" />
+          <xsd:element name="currentInstruction" type="typens:PackageInstruction" />
+          <xsd:element name="currentInstructionIndex" type="xsd:int" />
+          <xsd:element name="numberOfInstructions" type="xsd:int" />
+          <xsd:element name="status" type="typens:PackageStatusValues" />
+          <xsd:element name="error" type="typens:PackageError" />
+          <xsd:element name="transferPercent" type="xsd:int" />
+          <xsd:element name="transferFileSize" type="xsd:long" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="packageId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DataitemValue">
+        <xsd:sequence>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="value" type="xsd:string" />
+          <xsd:element name="quality" type="typens:Quality" />
+          <xsd:element name="type" type="typens:ValueType" />
+          <xsd:element name="timestamp" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Alarm">
+        <xsd:sequence>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="severity" type="xsd:int" />
+          <xsd:element name="timestamp" type="xsd:dateTime" />
+          <xsd:element name="ack" type="xsd:boolean" />
+          <xsd:element name="active" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Event">
+        <xsd:sequence>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+          <xsd:element name="severity" type="xsd:int" />
+          <xsd:element name="timestamp" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="File">
+        <xsd:sequence>
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="hint" type="xsd:string" />
+          <xsd:element name="deleteFile" type="xsd:boolean" />
+          <xsd:element name="IsPathDeviceRelative" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="PackageProcessingMode">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="fullyAutomatic" />
+          <xsd:enumeration value="manualInstall" />
+          <xsd:enumeration value="notifyOnly" />
+          <xsd:enumeration value="fullyManual" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Hour">
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="0" />
+          <xsd:maxInclusive value="23" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Minute">
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="0" />
+          <xsd:maxInclusive value="59" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Second">
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="0" />
+          <xsd:maxInclusive value="59" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="DayOfMonth">
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="1" />
+          <xsd:maxInclusive value="31" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="WeekOfMonth">
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="0" />
+          <xsd:maxInclusive value="4" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="DayOfWeek">
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="0" />
+          <xsd:maxInclusive value="6" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="Month">
+        <xsd:restriction base="xsd:int">
+          <xsd:minInclusive value="0" />
+          <xsd:maxInclusive value="11" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="DayOfWeekInMonth">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="weekOfMonth" type="typens:WeekOfMonth" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="dayOfWeek" type="typens:DayOfWeek" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="TimeOfDay">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="hour" type="typens:Hour" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="minute" type="typens:Minute" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="second" type="typens:Second" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Daily">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="weekDays" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Weekly">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="sunday" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="monday" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="tuesday" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="wednesday" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="thursday" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="friday" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="saturday" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Monthly">
+        <xsd:sequence minOccurs="1" maxOccurs="1">
+          <xsd:element minOccurs="0" maxOccurs="1" name="dayOfMonth" type="typens:DayOfMonth" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DayOfWeekInMonth" type="typens:DayOfWeekInMonth" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Yearly">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="typens:Monthly">
+            <xsd:sequence>
+              <xsd:element minOccurs="0" maxOccurs="1" name="month" type="typens:Month" />
+            </xsd:sequence>
+          </xsd:extension>
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:complexType name="Schedule">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="periodic" type="xsd:boolean" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="TimeOfDay" type="typens:TimeOfDay" />
+          <xsd:sequence minOccurs="1" maxOccurs="1">
+            <xsd:element minOccurs="0" maxOccurs="1" name="Daily" type="typens:Daily" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="Weekly" type="typens:Weekly" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="Monthly" type="typens:Monthly" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="Yearly" type="typens:Yearly" />
+          </xsd:sequence>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PackageProcessing">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="mode" type="typens:PackageProcessingMode" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="Schedule" type="typens:Schedule" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SMControllerConfig">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="PackageProcessing" type="typens:PackageProcessing" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="IdList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="id" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PackageInfo">
+        <xsd:sequence>
+          <xsd:element name="id" type="xsd:string" />
+          <xsd:element name="name" type="xsd:string" />
+          <xsd:element name="version" type="xsd:string" />
+          <xsd:element name="description" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="GetVersion">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetVersionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="version" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetDataitem">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="newvalue" type="typens:DataitemValue" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetDataitemResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetDataitem">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="name" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetDataitemResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="typens:DataitemValue" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateAlarm">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="alarm" type="typens:Alarm" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateAlarmResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="CreateEvent">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="event" type="typens:Event" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CreateEventResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetDeviceIds">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetDeviceIdsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="typens:DeviceIdsResult" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="FileUpload">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="file" type="typens:File" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="FileUploadResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="Shutdown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="mode" type="typens:ShutdownMode" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ShutdownResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="InternetConnect">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="InternetConnectResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="InternetDisconnect">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="fileTransferTimeout" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="InternetDisconnectResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="FileTransferControl">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="transferCommand" type="typens:TransferCommand" />
+            <xsd:element name="timeout" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="FileTransferControlResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetPackageManagementState">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetPackageManagementStateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="typens:PackageState" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPackageStatusList">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetPackageStatusListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="typens:PackageStatusListResult" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPulledPackageStatusList">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetPulledPackageStatusListResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="typens:PackageStatusListResult" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetSMControllerConfig">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetSMControllerConfigResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SMControllerConfig" type="typens:SMControllerConfig" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetSMControllerConfig">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SMControllerConfig" type="typens:SMControllerConfig" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="SetSMControllerConfigResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetPackageInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="packageId" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPackageInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="typens:PackageInfo" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CheckNewPackages">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="queryServer" type="xsd:boolean" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CheckNewPackagesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DownloadPackages">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+            <xsd:element name="packages" type="typens:IdList" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="DownloadPackagesResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="ExecutePackages">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+            <xsd:element name="packages" type="typens:IdList" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ExecutePackagesResponse">
+        <xsd:complexType />
+      </xsd:element>
+      <xsd:element name="GetPackageStatusUpdates">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="timeout" nillable="true" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPackageStatusUpdatesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="result" type="typens:PackageStatusListResult" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="RemovePackageStatuses">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="1" name="device" nillable="true" type="typens:DeviceIdentification" />
+            <xsd:element name="packages" type="typens:IdList" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="RemovePackageStatusesResponse">
+        <xsd:complexType />
+      </xsd:element>
+    </xsd:schema>
+  </types>
+  <message name="GetVersionSoapIn">
+    <part name="parameters" element="typens:GetVersion" />
+  </message>
+  <message name="GetVersionSoapOut">
+    <part name="parameters" element="typens:GetVersionResponse" />
+  </message>
+  <message name="SetDataitemSoapIn">
+    <part name="parameters" element="typens:SetDataitem" />
+  </message>
+  <message name="SetDataitemSoapOut">
+    <part name="parameters" element="typens:SetDataitemResponse" />
+  </message>
+  <message name="GetDataitemSoapIn">
+    <part name="parameters" element="typens:GetDataitem" />
+  </message>
+  <message name="GetDataitemSoapOut">
+    <part name="parameters" element="typens:GetDataitemResponse" />
+  </message>
+  <message name="CreateAlarmSoapIn">
+    <part name="parameters" element="typens:CreateAlarm" />
+  </message>
+  <message name="CreateAlarmSoapOut">
+    <part name="parameters" element="typens:CreateAlarmResponse" />
+  </message>
+  <message name="CreateEventSoapIn">
+    <part name="parameters" element="typens:CreateEvent" />
+  </message>
+  <message name="CreateEventSoapOut">
+    <part name="parameters" element="typens:CreateEventResponse" />
+  </message>
+  <message name="GetDeviceIdsSoapIn">
+    <part name="parameters" element="typens:GetDeviceIds" />
+  </message>
+  <message name="GetDeviceIdsSoapOut">
+    <part name="parameters" element="typens:GetDeviceIdsResponse" />
+  </message>
+  <message name="FileUploadSoapIn">
+    <part name="parameters" element="typens:FileUpload" />
+  </message>
+  <message name="FileUploadSoapOut">
+    <part name="parameters" element="typens:FileUploadResponse" />
+  </message>
+  <message name="ShutdownSoapIn">
+    <part name="parameters" element="typens:Shutdown" />
+  </message>
+  <message name="ShutdownSoapOut">
+    <part name="parameters" element="typens:ShutdownResponse" />
+  </message>
+  <message name="InternetConnectSoapIn">
+    <part name="parameters" element="typens:InternetConnect" />
+  </message>
+  <message name="InternetConnectSoapOut">
+    <part name="parameters" element="typens:InternetConnectResponse" />
+  </message>
+  <message name="InternetDisconnectSoapIn">
+    <part name="parameters" element="typens:InternetDisconnect" />
+  </message>
+  <message name="InternetDisconnectSoapOut">
+    <part name="parameters" element="typens:InternetDisconnectResponse" />
+  </message>
+  <message name="FileTransferControlSoapIn">
+    <part name="parameters" element="typens:FileTransferControl" />
+  </message>
+  <message name="FileTransferControlSoapOut">
+    <part name="parameters" element="typens:FileTransferControlResponse" />
+  </message>
+  <message name="GetPackageManagementStateSoapIn">
+    <part name="parameters" element="typens:GetPackageManagementState" />
+  </message>
+  <message name="GetPackageManagementStateSoapOut">
+    <part name="parameters" element="typens:GetPackageManagementStateResponse" />
+  </message>
+  <message name="GetPackageStatusListSoapIn">
+    <part name="parameters" element="typens:GetPackageStatusList" />
+  </message>
+  <message name="GetPackageStatusListSoapOut">
+    <part name="parameters" element="typens:GetPackageStatusListResponse" />
+  </message>
+  <message name="GetPulledPackageStatusListSoapIn">
+    <part name="parameters" element="typens:GetPulledPackageStatusList" />
+  </message>
+  <message name="GetPulledPackageStatusListSoapOut">
+    <part name="parameters" element="typens:GetPulledPackageStatusListResponse" />
+  </message>
+  <message name="GetSMControllerConfigSoapIn">
+    <part name="parameters" element="typens:GetSMControllerConfig" />
+  </message>
+  <message name="GetSMControllerConfigSoapOut">
+    <part name="parameters" element="typens:GetSMControllerConfigResponse" />
+  </message>
+  <message name="SetSMControllerConfigSoapIn">
+    <part name="parameters" element="typens:SetSMControllerConfig" />
+  </message>
+  <message name="SetSMControllerConfigSoapOut">
+    <part name="parameters" element="typens:SetSMControllerConfigResponse" />
+  </message>
+  <message name="GetPackageInfoSoapIn">
+    <part name="parameters" element="typens:GetPackageInfo" />
+  </message>
+  <message name="GetPackageInfoSoapOut">
+    <part name="parameters" element="typens:GetPackageInfoResponse" />
+  </message>
+  <message name="CheckNewPackagesSoapIn">
+    <part name="parameters" element="typens:CheckNewPackages" />
+  </message>
+  <message name="CheckNewPackagesSoapOut">
+    <part name="parameters" element="typens:CheckNewPackagesResponse" />
+  </message>
+  <message name="DownloadPackagesSoapIn">
+    <part name="parameters" element="typens:DownloadPackages" />
+  </message>
+  <message name="DownloadPackagesSoapOut">
+    <part name="parameters" element="typens:DownloadPackagesResponse" />
+  </message>
+  <message name="ExecutePackagesSoapIn">
+    <part name="parameters" element="typens:ExecutePackages" />
+  </message>
+  <message name="ExecutePackagesSoapOut">
+    <part name="parameters" element="typens:ExecutePackagesResponse" />
+  </message>
+  <message name="GetPackageStatusUpdatesSoapIn">
+    <part name="parameters" element="typens:GetPackageStatusUpdates" />
+  </message>
+  <message name="GetPackageStatusUpdatesSoapOut">
+    <part name="parameters" element="typens:GetPackageStatusUpdatesResponse" />
+  </message>
+  <message name="RemovePackageStatusesSoapIn">
+    <part name="parameters" element="typens:RemovePackageStatuses" />
+  </message>
+  <message name="RemovePackageStatusesSoapOut">
+    <part name="parameters" element="typens:RemovePackageStatusesResponse" />
+  </message>
+  <portType name="Service">
+    <operation name="GetVersion">
+      <documentation>Get version of the agent</documentation>
+      <input message="names:GetVersionSoapIn" />
+      <output message="names:GetVersionSoapOut" />
+    </operation>
+    <operation name="SetDataitem">
+      <input message="names:SetDataitemSoapIn" />
+      <output message="names:SetDataitemSoapOut" />
+    </operation>
+    <operation name="GetDataitem">
+      <input message="names:GetDataitemSoapIn" />
+      <output message="names:GetDataitemSoapOut" />
+    </operation>
+    <operation name="CreateAlarm">
+      <input message="names:CreateAlarmSoapIn" />
+      <output message="names:CreateAlarmSoapOut" />
+    </operation>
+    <operation name="CreateEvent">
+      <input message="names:CreateEventSoapIn" />
+      <output message="names:CreateEventSoapOut" />
+    </operation>
+    <operation name="GetDeviceIds">
+      <input message="names:GetDeviceIdsSoapIn" />
+      <output message="names:GetDeviceIdsSoapOut" />
+    </operation>
+    <operation name="FileUpload">
+      <input message="names:FileUploadSoapIn" />
+      <output message="names:FileUploadSoapOut" />
+    </operation>
+    <operation name="Shutdown">
+      <input message="names:ShutdownSoapIn" />
+      <output message="names:ShutdownSoapOut" />
+    </operation>
+    <operation name="InternetConnect">
+      <input message="names:InternetConnectSoapIn" />
+      <output message="names:InternetConnectSoapOut" />
+    </operation>
+    <operation name="InternetDisconnect">
+      <input message="names:InternetDisconnectSoapIn" />
+      <output message="names:InternetDisconnectSoapOut" />
+    </operation>
+    <operation name="FileTransferControl">
+      <input message="names:FileTransferControlSoapIn" />
+      <output message="names:FileTransferControlSoapOut" />
+    </operation>
+    <operation name="GetPackageManagementState">
+      <input message="names:GetPackageManagementStateSoapIn" />
+      <output message="names:GetPackageManagementStateSoapOut" />
+    </operation>
+    <operation name="GetPackageStatusList">
+      <input message="names:GetPackageStatusListSoapIn" />
+      <output message="names:GetPackageStatusListSoapOut" />
+    </operation>
+    <operation name="GetPulledPackageStatusList">
+      <input message="names:GetPulledPackageStatusListSoapIn" />
+      <output message="names:GetPulledPackageStatusListSoapOut" />
+    </operation>
+    <operation name="GetSMControllerConfig">
+      <input message="names:GetSMControllerConfigSoapIn" />
+      <output message="names:GetSMControllerConfigSoapOut" />
+    </operation>
+    <operation name="SetSMControllerConfig">
+      <input message="names:SetSMControllerConfigSoapIn" />
+      <output message="names:SetSMControllerConfigSoapOut" />
+    </operation>
+    <operation name="GetPackageInfo">
+      <input message="names:GetPackageInfoSoapIn" />
+      <output message="names:GetPackageInfoSoapOut" />
+    </operation>
+    <operation name="CheckNewPackages">
+      <input message="names:CheckNewPackagesSoapIn" />
+      <output message="names:CheckNewPackagesSoapOut" />
+    </operation>
+    <operation name="DownloadPackages">
+      <input message="names:DownloadPackagesSoapIn" />
+      <output message="names:DownloadPackagesSoapOut" />
+    </operation>
+    <operation name="ExecutePackages">
+      <input message="names:ExecutePackagesSoapIn" />
+      <output message="names:ExecutePackagesSoapOut" />
+    </operation>
+    <operation name="GetPackageStatusUpdates">
+      <input message="names:GetPackageStatusUpdatesSoapIn" />
+      <output message="names:GetPackageStatusUpdatesSoapOut" />
+    </operation>
+    <operation name="RemovePackageStatuses">
+      <input message="names:RemovePackageStatusesSoapIn" />
+      <output message="names:RemovePackageStatusesSoapOut" />
+    </operation>
+  </portType>
+  <binding name="Service" type="names:Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="GetVersion">
+      <soap:operation soapAction="GetVersion" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SetDataitem">
+      <soap:operation soapAction="SetDataitem" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDataitem">
+      <soap:operation soapAction="GetDataitem" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CreateAlarm">
+      <soap:operation soapAction="CreateAlarm" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CreateEvent">
+      <soap:operation soapAction="CreateEvent" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDeviceIds">
+      <soap:operation soapAction="GetDeviceIds" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="FileUpload">
+      <soap:operation soapAction="FileUpload" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Shutdown">
+      <soap:operation soapAction="Shutdown" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="InternetConnect">
+      <soap:operation soapAction="InternetConnect" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="InternetDisconnect">
+      <soap:operation soapAction="InternetDisconnect" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="FileTransferControl">
+      <soap:operation soapAction="FileTransferControl" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPackageManagementState">
+      <soap:operation soapAction="GetPackageManagementState" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPackageStatusList">
+      <soap:operation soapAction="GetPackageStatusList" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPulledPackageStatusList">
+      <soap:operation soapAction="GetPulledPackageStatusList" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetSMControllerConfig">
+      <soap:operation soapAction="GetSMControllerConfig" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="SetSMControllerConfig">
+      <soap:operation soapAction="SetSMControllerConfig" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPackageInfo">
+      <soap:operation soapAction="GetPackageInfo" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CheckNewPackages">
+      <soap:operation soapAction="CheckNewPackages" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="DownloadPackages">
+      <soap:operation soapAction="DownloadPackages" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ExecutePackages">
+      <soap:operation soapAction="ExecutePackages" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetPackageStatusUpdates">
+      <soap:operation soapAction="GetPackageStatusUpdates" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RemovePackageStatuses">
+      <soap:operation soapAction="RemovePackageStatuses" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+</definitions>

@@ -1,0 +1,34 @@
+<DeployConfigUI>
+    <ParameterGroup title="Agent Deployment Configuration">
+        <ParameterGroup title="Agent Identification">
+            <Parameter id="agent.model" title="Agent Model Number"/>
+            <Parameter id="agent.serial" title="Agent Serial Number"/>
+        </ParameterGroup>
+        <ParameterGroup title="Enterprise Server Configuration">
+            <Parameter id="enterprise.host" title="Hostname or IP Address"/>
+            <Parameter id="enterprise.port" title="Port Number"/>
+            <Parameter id="enterprise.ssl" title="SSL/TLS Usage"/>
+        </ParameterGroup>
+        <ParameterGroup title="Proxy Server Configuration">
+            <ParameterGroup id="proxy.pac" title="Proxy Auto-Configuration (PAC)" optional="true">
+                <Parameter id="proxy.pac.url" title="Proxy Auto-Configuration (PAC) URL"/>
+            </ParameterGroup>
+            <ParameterGroup id="proxy.server.http" title="HTTP Proxy Server" optional="true">
+                <Parameter id="proxy.server.http.host" title="Hostname or IP Address"/>
+                <Parameter id="proxy.server.http.port" title="Server Port Number"/>
+            </ParameterGroup>
+            <ParameterGroup id="proxy.auth.http" title="HTTP Proxy Authentication" optional="true">
+                <Parameter id="proxy.auth.http.user" title="Username"/>
+                <Parameter id="proxy.auth.http.pass" title="Password" secret="true"/>
+            </ParameterGroup>
+            <ParameterGroup id="proxy.server.socks" title="SOCKS Proxy Server" optional="true">
+                <Parameter id="proxy.server.socks.host" title="Hostname or IP Address"/>
+                <Parameter id="proxy.server.socks.port" title="Server Port Number"/>
+            </ParameterGroup>
+            <ParameterGroup id="proxy.auth.socks" title="SOCKS Proxy Authentication" optional="true">
+                <Parameter id="proxy.auth.socks.user" title="Username"/>
+                <Parameter id="proxy.auth.socks.pass" title="Password" secret="true"/>
+            </ParameterGroup>
+        </ParameterGroup>
+    </ParameterGroup>
+</DeployConfigUI>

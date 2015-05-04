@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData moduleName="xgScript" TerseType="1">
+<v>1</v>
+<Action name="RestartDevice" file="RestartDevice.seq" visible="1" />
+
+</PersistedData>

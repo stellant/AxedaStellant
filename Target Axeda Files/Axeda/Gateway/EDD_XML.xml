@@ -1,0 +1,95 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData>
+  <Version>1</Version>
+  <Debug debug-level="0">
+    <Overrides>
+      <Override device-name="device1" debug-level="0" />
+    </Overrides>
+  </Debug>
+  <ScanPeriod>15</ScanPeriod>
+  <ScanTasks> 
+    <ScanTask name="VirtualCare" file="XMLFolder/VirtualCareMonitorData.xml" cycle="1">
+      <Actions>
+      
+      <Action create-dataitem="Injector" dataitem-type="analog" >
+          <ExtractValue value-type="decimal"/>		
+          <Search>
+            <VirtualCareMonitorData>
+				<injector>
+					<injector/>
+				</injector>
+			</VirtualCareMonitorData>
+          	</Search>
+        </Action>
+        
+        <Action create-dataitem="Injector_Type" dataitem-type="string" >
+          <ExtractValue/>		
+          <Search>
+            <VirtualCareMonitorData>
+				<injector>
+					<injectorType/>
+				</injector>
+			</VirtualCareMonitorData>
+          	</Search>
+        </Action>
+        
+        <Action create-dataitem="Injector_Software_Version" dataitem-type="string" >
+          <ExtractValue/>		
+          <Search>
+            <VirtualCareMonitorData>
+				<injector>
+					<softwareVersion/>
+				</injector>
+			</VirtualCareMonitorData>
+          	</Search>
+        </Action>
+        
+       
+        <Action create-dataitem="CRU_ID" dataitem-type="string" >
+          <ExtractValue/>		
+          <Search>
+            <VirtualCareMonitorData>
+				<injector>
+					<cruId/>
+				</injector>
+			</VirtualCareMonitorData>
+          	</Search>
+        </Action>
+        
+        <Action create-dataitem="SRU_ID" dataitem-type="string" >
+          <ExtractValue/>		
+          <Search>
+            <VirtualCareMonitorData>
+				<injector>
+					<sruId/>
+				</injector>
+			</VirtualCareMonitorData>
+          	</Search>
+        </Action>
+        
+                
+        <Action create-dataitem="Last_Critical_Error" dataitem-type="string" >
+          <ExtractValue/>		
+          <Search>
+            <VirtualCareMonitorData>
+				<injector>
+					<lastCriticalError/>
+				</injector>
+			</VirtualCareMonitorData>
+          	</Search>
+        </Action>
+        
+        <Action create-dataitem="Last_Device_Detection" dataitem-type="string" >
+          <ExtractValue/>		
+          <Search>
+            <VirtualCareMonitorData>
+				<injector>
+						<lastDeviceDetection/>
+				</injector>
+			</VirtualCareMonitorData>
+          	</Search>
+        </Action>
+        </Actions>
+    </ScanTask>
+</ScanTasks> 
+</PersistedData>

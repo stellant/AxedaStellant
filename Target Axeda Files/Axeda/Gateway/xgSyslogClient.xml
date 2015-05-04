@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<SyslogClient kernel-logging-enabled="false" log-level="Error" >
+<Version>1</Version>
+<Debug>0</Debug>
+<Hosts>
+<Host name="127.0.0.1" port="514" />
+</Hosts>
+</SyslogClient>

@@ -1,0 +1,9 @@
+<xgtrap>
+  <v>1</v>
+<trap oid=".1.3.6.1.6.3.1.1.5.1" name="Cold start" eventtype="0" alarmseverity="0"/>
+<trap oid=".1.3.6.1.6.3.1.1.5.2" name="Warm start" eventtype="0" alarmseverity="0"/>
+<trap oid=".1.3.6.1.6.3.1.1.5.3" name="Link down" eventtype="0" alarmseverity="0"/>
+<trap oid=".1.3.6.1.6.3.1.1.5.4" name="Link up" eventtype="0" alarmseverity="0"/>
+<trap oid=".1.3.6.1.6.3.1.1.5.5" name="Authentication failure" eventtype="0" alarmseverity="0"/>
+<trap oid=".1.3.6.1.6.3.1.1.5.6" name="EGP neighbor loss" eventtype="0" alarmseverity="0"/>
+</xgtrap>

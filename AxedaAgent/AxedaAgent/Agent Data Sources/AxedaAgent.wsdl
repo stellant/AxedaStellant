@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+      Copyright 2002-2008 Axeda Corporation.  All rights reserved.
+      Axeda Agent Services
+      http://www.axeda.com
+-->
+<!-- Revision Sept-28-2005 -->
+<definitions
+            targetNamespace="http://axeda.com/agent/api" 
+            xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            xmlns:typens="http://axeda.com/agent/api/type" 
+            xmlns:names="http://axeda.com/agent/api"
+            xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema elementFormDefault="qualified" 
+                xmlns="http://www.w3.org/2001/XMLSchema" 
+                targetNamespace="http://axeda.com/agent/api/type">
+
+<!-- enumerations --> 
+      <simpleType name="ValueType">
+        <restriction base="string">
+          <enumeration value="Analog" />
+          <enumeration value="Digital" />
+          <enumeration value="String" />
+        </restriction>
+      </simpleType>
+
+      <simpleType name="Quality">
+        <restriction base="string">
+          <enumeration value="Good" />
+          <enumeration value="Bad" />
+          <enumeration value="Uncertain" />
+        </restriction>
+      </simpleType>
+
+      <simpleType name="ShutdownMode">
+        <restriction base="string">
+          <enumeration value="Soft Restart" />
+          <enumeration value="Hard Restart" />
+          <enumeration value="System Reboot" />
+          <enumeration value="Stop Agent" />
+        </restriction>
+      </simpleType>
+
+      <simpleType name="TransferCommand">
+        <restriction base="string">
+          <enumeration value="CancelAll" />
+          <enumeration value="PauseAll" />
+          <enumeration value="ResumeAll" />
+        </restriction>
+      </simpleType>
+      
+      <simpleType name="PackageState">
+        <restriction base="string">
+          <enumeration value="Running" />
+          <enumeration value="Idle" />
+        </restriction>
+      </simpleType>
+
+      <simpleType name="PackageInstruction">
+        <restriction base="string">
+          <enumeration value="Uploading" />
+          <enumeration value="Downloading" />
+          <enumeration value="Other" />
+        </restriction>
+      </simpleType>
+
+      <simpleType name="PackageStatusValues">
+        <restriction base="string">
+          <enumeration value="Queued" />
+          <enumeration value="Started" />
+          <enumeration value="Success" />
+          <enumeration value="Error" />
+          <enumeration value="Canceled" />
+          <enumeration value="Timeout" />
+          <enumeration value="Rolling Back" />
+          <enumeration value="Rollback Error" />
+          <enumeration value="Rollback Success" />
+          <enumeration value="Dependency Failed" />
+          <enumeration value="File Inhibited" />
+          <enumeration value="Undefined" />
+          <enumeration value="New" />
+          <enumeration value="Deployment Pending" />
+          <enumeration value="Downloaded" />
+        </restriction>
+      </simpleType>
+
+      <simpleType name="PackageError">
+        <restriction base="string">
+          <enumeration value="Failed" />
+          <enumeration value="Version Mismatch" />
+          <enumeration value="Bad XML Format" />
+          <enumeration value="Unknown SOAP Method" />
+          <enumeration value="Unsupported Function" />
+          <enumeration value="Data Item Name Not Found" />
+          <enumeration value="Registry Name Not Found" />
+          <enumeration value="Registry File Read Error" />
+          <enumeration value="Invalid Dependency Expression" />
+          <enumeration value="No Files Found For Upload" />
+          <enumeration value="Only Some File Found For Upload" />
+          <enumeration value="Download Execution Failure" />
+          <enumeration value="File Archive Error" />
+          <enumeration value="File Read Error" />
+          <enumeration value="HTTP Status Error" />
+          <enumeration value="Chunk Checksum Error" />
+          <enumeration value="Connection Failure" />
+          <enumeration value="SOCKS Failure" />
+          <enumeration value="HTTP Failure" />
+          <enumeration value="SSL Failure" />
+          <enumeration value="Package Processing Aborted" />
+          <enumeration value="File Checksum Error" />
+          <enumeration value="Missing Partially Uploaded File" />
+          <enumeration value="Invalid Directory Name" />
+          <enumeration value="Restarting Of Agent Device Is Invalid" />
+          <enumeration value="Custom SOAP Function Error" />
+          <enumeration value="No Error" />
+          <enumeration value="Undefined" />
+        </restriction>
+      </simpleType>
+
+<!-- object structures  -->
+
+      <complexType name="DeviceIdsResult">
+        <sequence>
+          <element name="device" minOccurs="0" maxOccurs="unbounded" type="typens:DeviceIdentification"/>
+        </sequence>
+      </complexType>
+
+      <complexType name="DeviceIdentification">
+        <sequence>
+          <element name="model" type="xsd:string"/>
+          <element name="serialNumber" type="xsd:string"/>
+        </sequence>
+      </complexType>
+
+
+      <complexType name="PackageStatusListResult">
+        <sequence>
+          <element name="PackageStatus" minOccurs="0" maxOccurs="unbounded" type="typens:PackageStatus"/>
+        </sequence>
+      </complexType>
+
+     <complexType name="PackageStatus">
+        <sequence>
+          <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+          <element name="packageName" type="xsd:string" />
+          <element name="lastUpdated" type="xsd:dateTime" />
+          <element name="currentInstruction" type="typens:PackageInstruction" />
+          <element name="currentInstructionIndex" type="xsd:int" />
+          <element name="numberOfInstructions" type="xsd:int" />
+          <element name="status" type="typens:PackageStatusValues" />
+          <element name="error" type="typens:PackageError" />
+          <element name="transferPercent" type="xsd:int" />
+          <element name="transferFileSize" type="xsd:long" />
+          <element name="packageId" nillable="true" minOccurs="0" maxOccurs="1" type="xsd:string" />
+        </sequence>
+      </complexType>
+
+      
+
+      <complexType name="DataitemValue">
+        <sequence>
+          <element name="name" type="xsd:string" />
+          <element name="value" type="xsd:string" />
+          <element name="quality" type="typens:Quality" />
+          <element name="type" type="typens:ValueType" />
+          <element name="timestamp" type="xsd:dateTime" />
+        </sequence>
+      </complexType>
+
+
+      <complexType name="Alarm">
+        <sequence>
+          <element name="name" type="xsd:string" />
+          <element name="description" type="xsd:string" />
+          <element name="severity" type="xsd:int" />
+          <element name="timestamp" type="xsd:dateTime" />
+          <element name="ack" type="xsd:boolean" />
+          <element name="active" type="xsd:boolean" />
+        </sequence>
+      </complexType>
+
+      <complexType name="Event">
+        <sequence>
+          <element name="name" type="xsd:string" />
+          <element name="description" type="xsd:string" />
+          <element name="severity" type="xsd:int" />
+          <element name="timestamp" type="xsd:dateTime" />
+        </sequence>
+      </complexType>
+
+
+      <complexType name="File">
+        <sequence>
+          <element name="name" type="xsd:string" />
+          <element name="hint" type="xsd:string" />
+          <element name="deleteFile" type="xsd:boolean" />
+          <element name="IsPathDeviceRelative" type="xsd:boolean" />
+        </sequence>
+      </complexType>
+
+<!-- SMControllerConfig types begin -->
+
+		  <xsd:simpleType name="PackageProcessingMode">
+		    <xsd:restriction base="xsd:string">
+		      <xsd:enumeration value="fullyAutomatic"></xsd:enumeration>
+		      <xsd:enumeration value="manualInstall"></xsd:enumeration>
+		      <xsd:enumeration value="notifyOnly"></xsd:enumeration>
+		      <xsd:enumeration value="fullyManual"></xsd:enumeration>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		  <xsd:simpleType name="Hour">
+		    <xsd:restriction base="xsd:int">
+		      <xsd:minInclusive value="0"></xsd:minInclusive>
+		      <xsd:maxInclusive value="23"></xsd:maxInclusive>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		  <xsd:simpleType name="Minute">
+		    <xsd:restriction base="xsd:int">
+		      <xsd:minInclusive value="0"></xsd:minInclusive>
+		      <xsd:maxInclusive value="59"></xsd:maxInclusive>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		
+		  <xsd:simpleType name="Second">
+		    <xsd:restriction base="xsd:int">
+		      <xsd:minInclusive value="0"></xsd:minInclusive>
+		      <xsd:maxInclusive value="59"></xsd:maxInclusive>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		  <xsd:simpleType name="DayOfMonth">
+		    <xsd:restriction base="xsd:int">
+		      <xsd:minInclusive value="1"></xsd:minInclusive>
+		      <xsd:maxInclusive value="31"></xsd:maxInclusive>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		  <xsd:simpleType name="WeekOfMonth">
+		    <xsd:restriction base="xsd:int">
+		      <xsd:minInclusive value="0"></xsd:minInclusive>
+		      <xsd:maxInclusive value="4"></xsd:maxInclusive>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		  <xsd:simpleType name="DayOfWeek">
+		    <xsd:restriction base="xsd:int">
+		      <xsd:minInclusive value="0"></xsd:minInclusive>
+		      <xsd:maxInclusive value="6"></xsd:maxInclusive>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		  <xsd:simpleType name="Month">
+		    <xsd:restriction base="xsd:int">
+		      <xsd:minInclusive value="0"></xsd:minInclusive>
+		      <xsd:maxInclusive value="11"></xsd:maxInclusive>
+		    </xsd:restriction>
+		  </xsd:simpleType>
+		
+		  <xsd:complexType name="DayOfWeekInMonth">
+		    <xsd:sequence>
+		      <xsd:element name="weekOfMonth" type="typens:WeekOfMonth" maxOccurs="1" minOccurs="0">
+		      </xsd:element>
+		      <xsd:element name="dayOfWeek" type="typens:DayOfWeek" maxOccurs="1" minOccurs="0">
+		      </xsd:element>
+		    </xsd:sequence>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="TimeOfDay">
+		    <xsd:sequence>
+		      <xsd:element name="hour" type="typens:Hour" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="minute" type="typens:Minute" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="second" type="typens:Second" maxOccurs="1" minOccurs="0"></xsd:element>
+		    </xsd:sequence>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="Daily">
+		    <xsd:sequence>
+		      <xsd:element name="weekDays" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		    </xsd:sequence>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="Weekly">
+		    <xsd:sequence>
+		      <xsd:element name="sunday" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="monday" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="tuesday" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="wednesday" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="thursday" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="friday" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="saturday" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		    </xsd:sequence>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="Monthly">
+		    <xsd:sequence minOccurs="1" maxOccurs="1">
+		      <xsd:element name="dayOfMonth" type="typens:DayOfMonth" maxOccurs="1" minOccurs="0">
+		      </xsd:element>
+		      <xsd:element name="DayOfWeekInMonth" type="typens:DayOfWeekInMonth" maxOccurs="1" minOccurs="0">
+		      </xsd:element>
+		    </xsd:sequence>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="Yearly">
+		    <xsd:complexContent>
+		      <xsd:extension base="typens:Monthly">
+		        <xsd:sequence>
+		          <xsd:element name="month" type="typens:Month" maxOccurs="1" minOccurs="0"></xsd:element>
+		        </xsd:sequence>
+		      </xsd:extension>
+		    </xsd:complexContent>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="Schedule">
+		    <xsd:sequence>
+		      <xsd:element name="periodic" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:element name="TimeOfDay" type="typens:TimeOfDay" maxOccurs="1" minOccurs="0"></xsd:element>
+		      <xsd:sequence minOccurs="1" maxOccurs="1">
+		        <xsd:element name="Daily" type="typens:Daily" maxOccurs="1" minOccurs="0"></xsd:element>
+		        <xsd:element name="Weekly" type="typens:Weekly" maxOccurs="1" minOccurs="0"></xsd:element>
+		        <xsd:element name="Monthly" type="typens:Monthly" maxOccurs="1" minOccurs="0"></xsd:element>
+		        <xsd:element name="Yearly" type="typens:Yearly" maxOccurs="1" minOccurs="0"></xsd:element>
+		      </xsd:sequence>
+		    </xsd:sequence>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="PackageProcessing">
+		    <xsd:sequence>
+		      <xsd:element minOccurs="0" maxOccurs="1" name="mode" type="typens:PackageProcessingMode">
+		      </xsd:element>
+		      <xsd:element minOccurs="0" maxOccurs="1" name="Schedule" type="typens:Schedule">
+		      </xsd:element>
+		    </xsd:sequence>
+		  </xsd:complexType>
+		
+		  <xsd:complexType name="SMControllerConfig">
+		    <xsd:sequence>
+		      <xsd:element minOccurs="1" maxOccurs="1" name="PackageProcessing" type="typens:PackageProcessing">
+		      </xsd:element>
+		    </xsd:sequence>
+		  </xsd:complexType>
+
+<!-- SMControllerConfig types end -->
+
+      <complexType name="IdList">
+        <sequence>
+          <element name="id" minOccurs="0" maxOccurs="unbounded" type="xsd:string"/>
+        </sequence>
+      </complexType>
+
+      <complexType name="PackageInfo">
+        <sequence>
+          <element name="id" type="xsd:string" />
+          <element name="name" type="xsd:string" />
+          <element name="version" type="xsd:string" />
+          <element name="description" type="xsd:string" />
+        </sequence>
+      </complexType>
+
+<!--   function definitions  -->
+
+      <element name="GetVersion">
+        <complexType />
+      </element>
+
+      <element name="GetVersionResponse">
+        <complexType>
+          <sequence>
+            <element name="version" type="xsd:string" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="SetDataitem">
+        <complexType>
+          <sequence>
+            <element name="newvalue" type="typens:DataitemValue" />
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetDataitemResponse">
+        <complexType />
+      </element>
+      
+      <element name="GetDataitem">
+        <complexType>
+          <sequence>
+            <element name="name" type="xsd:string" />
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetDataitemResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="typens:DataitemValue" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="CreateAlarm">
+        <complexType>
+          <sequence>
+            <element name="alarm" type="typens:Alarm" />
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateAlarmResponse">
+        <complexType />
+      </element>
+
+      <element name="CreateEvent">
+        <complexType>
+          <sequence>
+            <element name="event" type="typens:Event" />
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CreateEventResponse">
+        <complexType />
+      </element>
+
+      <element name="GetDeviceIds">
+        <complexType />
+      </element>
+      <element name="GetDeviceIdsResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="typens:DeviceIdsResult" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="FileUpload">
+        <complexType>
+          <sequence>
+            <element name="file" type="typens:File" />
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="FileUploadResponse">
+        <complexType />
+      </element>
+
+
+      <element name="Shutdown">
+        <complexType>
+          <sequence>
+            <element name="mode" type="typens:ShutdownMode" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="ShutdownResponse">
+        <complexType />
+      </element>
+
+      <element name="InternetConnect">
+        <complexType />
+      </element>
+
+      <element name="InternetConnectResponse">
+        <complexType />
+      </element>
+
+      <element name="InternetDisconnect">
+        <complexType>
+          <sequence>
+            <element name="fileTransferTimeout" type="xsd:int" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="InternetDisconnectResponse">
+        <complexType />
+      </element>
+
+      <element name="FileTransferControl">
+        <complexType>
+          <sequence>
+            <element name="transferCommand" type="typens:TransferCommand" />
+            <element name="timeout" type="xsd:int" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="FileTransferControlResponse">
+        <complexType />
+      </element>
+
+      <element name="GetPackageManagementState">
+        <complexType />
+      </element>
+      <element name="GetPackageManagementStateResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="typens:PackageState" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="GetPackageStatusList">
+        <complexType />
+      </element>
+      <element name="GetPackageStatusListResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="typens:PackageStatusListResult" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="GetPulledPackageStatusList">
+        <complexType />
+      </element>
+      <element name="GetPulledPackageStatusListResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="typens:PackageStatusListResult" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="GetSMControllerConfig">
+        <complexType />
+      </element>
+      <element name="GetSMControllerConfigResponse">
+        <complexType>
+          <sequence>
+            <element name="SMControllerConfig" type="typens:SMControllerConfig" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="SetSMControllerConfig">
+        <complexType>
+          <sequence>
+            <element name="SMControllerConfig" type="typens:SMControllerConfig" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="SetSMControllerConfigResponse">
+        <complexType />
+      </element>
+
+      <element name="GetPackageInfo">
+        <complexType>
+          <sequence>
+            <element name="packageId" type="xsd:string" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetPackageInfoResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="typens:PackageInfo" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="CheckNewPackages">
+        <complexType>
+          <sequence>
+            <element name="queryServer" type="xsd:boolean" />
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="CheckNewPackagesResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="xsd:boolean" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="DownloadPackages">
+        <complexType>
+          <sequence>
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+            <element name="packages" type="typens:IdList" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="DownloadPackagesResponse">
+        <complexType />
+      </element>
+
+      <element name="ExecutePackages">
+        <complexType>
+          <sequence>
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+            <element name="packages" type="typens:IdList" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="ExecutePackagesResponse">
+        <complexType />
+      </element>
+
+      <element name="GetPackageStatusUpdates">
+        <complexType>
+          <sequence>
+            <element name="timeout" nillable="true" minOccurs="0" maxOccurs="1" type="xsd:int" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="GetPackageStatusUpdatesResponse">
+        <complexType>
+          <sequence>
+            <element name="result" type="typens:PackageStatusListResult" />
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="RemovePackageStatuses">
+        <complexType>
+          <sequence>
+            <element name="device" nillable="true" minOccurs="0" maxOccurs="1" type="typens:DeviceIdentification" />
+            <element name="packages" type="typens:IdList" />
+          </sequence>
+        </complexType>
+      </element>
+      <element name="RemovePackageStatusesResponse">
+        <complexType />
+      </element>
+
+    </xsd:schema>
+  </types>
+
+  <message name="GetVersionSoapIn">
+    <part name="parameters" element="typens:GetVersion" />
+  </message>
+  <message name="GetVersionSoapOut">
+    <part name="parameters" element="typens:GetVersionResponse" />
+  </message>
+  <message name="SetDataitemSoapIn">
+    <part name="parameters" element="typens:SetDataitem" />
+  </message>
+  <message name="SetDataitemSoapOut">
+    <part name="parameters" element="typens:SetDataitemResponse" />
+  </message>
+  <message name="GetDataitemSoapIn">
+    <part name="parameters" element="typens:GetDataitem" />
+  </message>
+  <message name="GetDataitemSoapOut">
+    <part name="parameters" element="typens:GetDataitemResponse" />
+  </message>
+  <message name="CreateAlarmSoapIn">
+    <part name="parameters" element="typens:CreateAlarm" />
+  </message>
+  <message name="CreateAlarmSoapOut">
+    <part name="parameters" element="typens:CreateAlarmResponse" />
+  </message>
+  <message name="CreateEventSoapIn">
+    <part name="parameters" element="typens:CreateEvent" />
+  </message>
+  <message name="CreateEventSoapOut">
+    <part name="parameters" element="typens:CreateEventResponse" />
+  </message>
+
+  <message name="GetDeviceIdsSoapIn">
+    <part name="parameters" element="typens:GetDeviceIds" />
+  </message>
+
+  <message name="GetDeviceIdsSoapOut">
+    <part name="parameters" element="typens:GetDeviceIdsResponse" />
+  </message>
+  <message name="FileUploadSoapIn">
+    <part name="parameters" element="typens:FileUpload" />
+  </message>
+  <message name="FileUploadSoapOut">
+    <part name="parameters" element="typens:FileUploadResponse" />
+  </message>
+  <message name="ShutdownSoapIn">
+    <part name="parameters" element="typens:Shutdown" />
+  </message>
+  <message name="ShutdownSoapOut">
+    <part name="parameters" element="typens:ShutdownResponse" />
+  </message>
+  <message name="InternetConnectSoapIn">
+    <part name="parameters" element="typens:InternetConnect" />
+  </message>
+  <message name="InternetConnectSoapOut">
+    <part name="parameters" element="typens:InternetConnectResponse" />
+  </message>
+  <message name="InternetDisconnectSoapIn">
+    <part name="parameters" element="typens:InternetDisconnect" />
+  </message>
+  <message name="InternetDisconnectSoapOut">
+    <part name="parameters" element="typens:InternetDisconnectResponse" />
+  </message>
+
+  <message name="FileTransferControlSoapIn">
+    <part name="parameters" element="typens:FileTransferControl" />
+  </message>
+  <message name="FileTransferControlSoapOut">
+    <part name="parameters" element="typens:FileTransferControlResponse" />
+  </message>
+
+  <message name="GetPackageManagementStateSoapIn">
+    <part name="parameters" element="typens:GetPackageManagementState" />
+  </message>
+  <message name="GetPackageManagementStateSoapOut">
+    <part name="parameters" element="typens:GetPackageManagementStateResponse" />
+  </message>
+
+  <message name="GetPackageStatusListSoapIn">
+    <part name="parameters" element="typens:GetPackageStatusList" />
+  </message>
+  <message name="GetPackageStatusListSoapOut">
+    <part name="parameters" element="typens:GetPackageStatusListResponse" />
+  </message>
+
+  <message name="GetPulledPackageStatusListSoapIn">
+    <part name="parameters" element="typens:GetPulledPackageStatusList" />
+  </message>
+  <message name="GetPulledPackageStatusListSoapOut">
+    <part name="parameters" element="typens:GetPulledPackageStatusListResponse" />
+  </message>
+
+  <message name="GetSMControllerConfigSoapIn">
+    <part name="parameters" element="typens:GetSMControllerConfig" />
+  </message>
+  <message name="GetSMControllerConfigSoapOut">
+    <part name="parameters" element="typens:GetSMControllerConfigResponse" />
+  </message>
+
+  <message name="SetSMControllerConfigSoapIn">
+    <part name="parameters" element="typens:SetSMControllerConfig" />
+  </message>
+  <message name="SetSMControllerConfigSoapOut">
+    <part name="parameters" element="typens:SetSMControllerConfigResponse" />
+  </message>
+
+  <message name="GetPackageInfoSoapIn">
+    <part name="parameters" element="typens:GetPackageInfo" />
+  </message>
+  <message name="GetPackageInfoSoapOut">
+    <part name="parameters" element="typens:GetPackageInfoResponse" />
+  </message>
+
+  <message name="CheckNewPackagesSoapIn">
+    <part name="parameters" element="typens:CheckNewPackages" />
+  </message>
+  <message name="CheckNewPackagesSoapOut">
+    <part name="parameters" element="typens:CheckNewPackagesResponse" />
+  </message>
+
+  <message name="DownloadPackagesSoapIn">
+    <part name="parameters" element="typens:DownloadPackages" />
+  </message>
+  <message name="DownloadPackagesSoapOut">
+    <part name="parameters" element="typens:DownloadPackagesResponse" />
+  </message>
+
+  <message name="ExecutePackagesSoapIn">
+    <part name="parameters" element="typens:ExecutePackages" />
+  </message>
+  <message name="ExecutePackagesSoapOut">
+    <part name="parameters" element="typens:ExecutePackagesResponse" />
+  </message>
+
+  <message name="GetPackageStatusUpdatesSoapIn">
+    <part name="parameters" element="typens:GetPackageStatusUpdates" />
+  </message>
+  <message name="GetPackageStatusUpdatesSoapOut">
+    <part name="parameters" element="typens:GetPackageStatusUpdatesResponse" />
+  </message>
+
+  <message name="RemovePackageStatusesSoapIn">
+    <part name="parameters" element="typens:RemovePackageStatuses" />
+  </message>
+  <message name="RemovePackageStatusesSoapOut">
+    <part name="parameters" element="typens:RemovePackageStatusesResponse" />
+  </message>
+
+  <portType name="Service">
+    <operation name="GetVersion">
+      <documentation>Get version of the agent</documentation>
+      <input  message="names:GetVersionSoapIn" />
+      <output message="names:GetVersionSoapOut" />
+    </operation>
+
+    <operation name="SetDataitem">
+      <input  message="names:SetDataitemSoapIn" />
+      <output message="names:SetDataitemSoapOut" />
+    </operation>
+
+    <operation name="GetDataitem">
+      <input  message="names:GetDataitemSoapIn" />
+      <output message="names:GetDataitemSoapOut" />
+    </operation>
+    <operation name="CreateAlarm">
+      <input  message="names:CreateAlarmSoapIn" />
+      <output message="names:CreateAlarmSoapOut" />
+    </operation>
+    <operation name="CreateEvent">
+      <input  message="names:CreateEventSoapIn" />
+      <output message="names:CreateEventSoapOut" />
+    </operation>
+
+    <operation name="GetDeviceIds">
+      <input  message="names:GetDeviceIdsSoapIn" />
+      <output message="names:GetDeviceIdsSoapOut" />
+    </operation>
+    
+    <operation name="FileUpload">
+      <input  message="names:FileUploadSoapIn" />
+      <output message="names:FileUploadSoapOut" />
+    </operation>
+
+    <operation name="Shutdown">
+      <input  message="names:ShutdownSoapIn" />
+      <output message="names:ShutdownSoapOut" />
+    </operation>
+
+    <operation name="InternetConnect">
+      <input  message="names:InternetConnectSoapIn" />
+      <output message="names:InternetConnectSoapOut" />
+    </operation>
+
+    <operation name="InternetDisconnect">
+      <input  message="names:InternetDisconnectSoapIn" />
+      <output message="names:InternetDisconnectSoapOut" />
+    </operation>
+
+    <operation name="FileTransferControl">
+      <input  message="names:FileTransferControlSoapIn" />
+      <output message="names:FileTransferControlSoapOut" />
+    </operation>
+
+    <operation name="GetPackageManagementState">
+      <input  message="names:GetPackageManagementStateSoapIn" />
+      <output message="names:GetPackageManagementStateSoapOut" />
+    </operation>
+    
+    <operation name="GetPackageStatusList">
+      <input  message="names:GetPackageStatusListSoapIn" />
+      <output message="names:GetPackageStatusListSoapOut" />
+    </operation>
+
+    <operation name="GetPulledPackageStatusList">
+      <input  message="names:GetPulledPackageStatusListSoapIn" />
+      <output message="names:GetPulledPackageStatusListSoapOut" />
+    </operation>
+
+    <operation name="GetSMControllerConfig">
+      <input  message="names:GetSMControllerConfigSoapIn" />
+      <output message="names:GetSMControllerConfigSoapOut" />
+    </operation>
+
+    <operation name="SetSMControllerConfig">
+      <input  message="names:SetSMControllerConfigSoapIn" />
+      <output message="names:SetSMControllerConfigSoapOut" />
+    </operation>
+
+    <operation name="GetPackageInfo">
+      <input  message="names:GetPackageInfoSoapIn" />
+      <output message="names:GetPackageInfoSoapOut" />
+    </operation>
+
+    <operation name="CheckNewPackages">
+      <input  message="names:CheckNewPackagesSoapIn" />
+      <output message="names:CheckNewPackagesSoapOut" />
+    </operation>
+
+    <operation name="DownloadPackages">
+      <input  message="names:DownloadPackagesSoapIn" />
+      <output message="names:DownloadPackagesSoapOut" />
+    </operation>
+
+    <operation name="ExecutePackages">
+      <input  message="names:ExecutePackagesSoapIn" />
+      <output message="names:ExecutePackagesSoapOut" />
+    </operation>
+
+    <operation name="GetPackageStatusUpdates">
+      <input  message="names:GetPackageStatusUpdatesSoapIn" />
+      <output message="names:GetPackageStatusUpdatesSoapOut" />
+    </operation>
+
+    <operation name="RemovePackageStatuses">
+      <input  message="names:RemovePackageStatusesSoapIn" />
+      <output message="names:RemovePackageStatusesSoapOut" />
+    </operation>
+
+  </portType>
+
+  <binding name="Service" type="names:Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetVersion">
+      <soap:operation soapAction="GetVersion" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="SetDataitem">
+      <soap:operation soapAction="SetDataitem" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="GetDataitem">
+      <soap:operation soapAction="GetDataitem" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CreateAlarm">
+      <soap:operation soapAction="CreateAlarm" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="CreateEvent">
+      <soap:operation soapAction="CreateEvent" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetDeviceIds">
+      <soap:operation soapAction="GetDeviceIds" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="FileUpload">
+      <soap:operation soapAction="FileUpload" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="Shutdown">
+      <soap:operation soapAction="Shutdown" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="InternetConnect">
+      <soap:operation soapAction="InternetConnect" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="InternetDisconnect">
+      <soap:operation soapAction="InternetDisconnect" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="FileTransferControl">
+      <soap:operation soapAction="FileTransferControl" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="GetPackageManagementState">
+      <soap:operation soapAction="GetPackageManagementState" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="GetPackageStatusList">
+      <soap:operation soapAction="GetPackageStatusList" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="GetPulledPackageStatusList">
+      <soap:operation soapAction="GetPulledPackageStatusList" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="GetSMControllerConfig">
+      <soap:operation soapAction="GetSMControllerConfig" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="SetSMControllerConfig">
+      <soap:operation soapAction="SetSMControllerConfig" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="GetPackageInfo">
+      <soap:operation soapAction="GetPackageInfo" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="CheckNewPackages">
+      <soap:operation soapAction="CheckNewPackages" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="DownloadPackages">
+      <soap:operation soapAction="DownloadPackages" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="ExecutePackages">
+      <soap:operation soapAction="ExecutePackages" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="GetPackageStatusUpdates">
+      <soap:operation soapAction="GetPackageStatusUpdates" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+    <operation name="RemovePackageStatuses">
+      <soap:operation soapAction="RemovePackageStatuses" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+
+  </binding>
+</definitions>

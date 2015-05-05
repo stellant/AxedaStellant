@@ -1,0 +1,53 @@
+//
+// file name: xWatchDog.txt
+//
+// configuration file for xWatchDog
+// If this file is missing, defaults will be set as specified here.
+//
+
+// Verbose Debug Output Mode (0=No Debug Output, 1=Debug Output, default is 1)
+Verbose = 1
+
+//
+// "RebootSystem" and "FailedRestart" together control system reboot:
+// The system reboots only if "RebootSystem" is "true" and 
+// consecutive failed Agent-restarts reaches the number set by "FailedRestart"
+//
+// Agent-restart failure means the watchdog cannot start Agent.
+// If Agents starts, then exists because of configuration errors, that is not a failure.
+//
+
+// Default is false
+RebootSystem = false
+
+// Default is 0
+FailedRestart = 0
+
+// ping rate in seconds (default is 60 seconds)
+PingRate = 60
+
+// missed consecutive pings before staring agent (default is 5)
+MissedPings = 5
+
+// log file "xWatchDog.log" maximum size in kbytes (default is 1024 kbytes, 0 means no log file is created)
+// Once maximum size is reached, the log file is wiped out and starts over again.
+LogFileSize = 1024
+
+// Auxiliary service definition. xWatchDog will monitor network service at specified IP address and port number.
+// xWatchDog will start and stop the service (using specified commands) according to the dependency flags.
+// If dependency flags are not set, xWatchDog will always try to keep the service running.
+// There can be more than one auxiliary service definition.
+// The following parameters are recognized:
+//	ip: IP address of the service
+//	port: port number of the service
+//	startCmd: command to start the service
+//	stopCmd: command to stop the service
+//	asAgent: Agent dependency flag (the service is started/stopped only if the Agent is running/not running)
+//	asServer: Server dependency flag (the service is started/stopped only if the Agent connected/not connected to the server)
+// AuxService = ip=127.0.0.1; port=80; startCmd=net start Apache2; stopCmd=net stop Apache2; asAgent=false; asServer=false
+
+// Custom Agent service name. Default is AxedaConnector / AxedaGateway
+// AgentServiceName = Custom Gateway
+
+// The home directory for the Agent.
+// HomeDirectory = c:\ProgramData\Axeda\Gateway

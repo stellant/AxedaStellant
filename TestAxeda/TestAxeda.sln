@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAxeda", "TestAxeda\TestAxeda.csproj", "{5BCAE5D5-CCE0-4B32-862A-D1CB1FB08A62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxedaAgent", "..\AxedaAgent\AxedaAgent\AxedaAgent.csproj", "{9517AD14-0BC7-45A5-BAD9-573198C0F554}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BCAE5D5-CCE0-4B32-862A-D1CB1FB08A62}.Debug|x86.ActiveCfg = Debug|x86
+		{5BCAE5D5-CCE0-4B32-862A-D1CB1FB08A62}.Debug|x86.Build.0 = Debug|x86
+		{5BCAE5D5-CCE0-4B32-862A-D1CB1FB08A62}.Release|x86.ActiveCfg = Release|x86
+		{5BCAE5D5-CCE0-4B32-862A-D1CB1FB08A62}.Release|x86.Build.0 = Release|x86
+		{9517AD14-0BC7-45A5-BAD9-573198C0F554}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9517AD14-0BC7-45A5-BAD9-573198C0F554}.Debug|x86.Build.0 = Debug|Any CPU
+		{9517AD14-0BC7-45A5-BAD9-573198C0F554}.Release|x86.ActiveCfg = Release|Any CPU
+		{9517AD14-0BC7-45A5-BAD9-573198C0F554}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = TestAxeda\TestAxeda.csproj
+	EndGlobalSection
+EndGlobal

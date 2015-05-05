@@ -1,0 +1,231 @@
+<PolicyActionGroups>
+
+<ActionGroup name="DataPublishing">
+
+<Action cmd="Monitor.Alarm">
+<ParameterWrapper>
+<Parameter n="n">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Monitor.Event">
+<ParameterWrapper>
+<Parameter n="n">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Monitor.Data">
+<ParameterWrapper>
+<Parameter n="n">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Monitor.Email">
+<ParameterWrapper>
+<Parameter n="to">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="DynamicData.SetTag">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+<Parameter n="DataItem" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Script.RegisterScript">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Script.RunScript">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="FileTransfer.Download">
+<ParameterWrapper>
+<Parameter n="file">*</Parameter>
+<Parameter n="mode" isPermissionRequest="true">*</Parameter>
+<Parameter n="execute" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="FileTransfer.Upload">
+<ParameterWrapper>
+<Parameter n="file">*</Parameter>
+<Parameter n="delete" isPermissionRequest="true">*</Parameter>
+<Parameter n="deviceRelative" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+</ActionGroup>
+
+<ActionGroup name="RemoteTelnet">
+
+<Action cmd="RConnection.StartInterface">
+<ParameterWrapper>
+<Parameter n="interfacename">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+</ActionGroup>
+
+<ActionGroup name="RemoteApplication">
+
+<Action cmd="RConnection.StartApplication">
+<ParameterWrapper>
+<Parameter n="interfacename">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+</ActionGroup>
+
+<ActionGroup name="Scripts">
+
+<Action cmd="Script.Enable">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Script.Disable">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Schema.Assign">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Schema.Unassign">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Script.StopScript">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Script.UnregisterScript">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Timer.Enable">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Timer.Remove">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Timer.Disable">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="Timer.Create">
+<ParameterWrapper>
+<Parameter n="name">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+</ActionGroup>
+
+<ActionGroup name="FileUpload">
+
+<Action cmd="FileTransfer.Upload" ignoreDisabled="true">
+<ParameterWrapper>
+<Parameter n="file">C:</Parameter>
+<Parameter n="delete" isPermissionRequest="true">*</Parameter>
+<Parameter n="deviceRelative" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+<ParameterWrapper>
+<Parameter n="file">/</Parameter>
+<Parameter n="delete" isPermissionRequest="true">*</Parameter>
+<Parameter n="deviceRelative" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+</ActionGroup>
+
+<ActionGroup name="FileDownload">
+
+<Action cmd="FileTransfer.Download" ignoreDisabled="true">
+<ParameterWrapper>
+<Parameter n="file">C:</Parameter>
+<Parameter n="mode" isPermissionRequest="true">*</Parameter>
+<Parameter n="execute" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+<ParameterWrapper>
+<Parameter n="file">/</Parameter>
+<Parameter n="mode" isPermissionRequest="true">*</Parameter>
+<Parameter n="execute" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+</ActionGroup>
+
+<ActionGroup name="_default_">
+
+<Action cmd="Package.Execute" default="enabled">
+<ParameterWrapper>
+<Parameter n="description" isPermissionRequest="true">*</Parameter>
+<Parameter n="name">*</Parameter>
+<Parameter n="packageVersion">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="EEnterpriseProxy.St" default="enabled">
+<ParameterWrapper>
+<Parameter n="Ti">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="EEnterpriseProxy.Pu" default="enabled">
+<ParameterWrapper>
+<Parameter n="ra">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="GatewayAPMProvisioning" default="disabled">
+<ParameterWrapper>
+<Parameter n="action">*</Parameter>
+<Parameter n="model">*</Parameter>
+<Parameter n="serial">*</Parameter>
+<Parameter n="Config">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="EEnterpriseProxy.Rs" default="enabled">
+<ParameterWrapper>
+<Parameter n="ha">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+<Action cmd="EEnterpriseProxy.Ex" default="enabled">
+<ParameterWrapper>
+<Parameter n="ex">*</Parameter>
+<Parameter n="ar" isPermissionRequest="true">*</Parameter>
+<Parameter n="wa" isPermissionRequest="true">*</Parameter>
+</ParameterWrapper>
+</Action>
+
+</ActionGroup>
+
+</PolicyActionGroups>

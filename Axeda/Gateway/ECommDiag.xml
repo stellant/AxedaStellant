@@ -1,0 +1,118 @@
+<Diagnostics>
+<Group id="server" summary="Server error" description="Error indicates a problem in communication with the server.">
+<Param id="server" name="Enterprise server" />
+<Condition id="0" summary="No error" />
+<Condition id="1" summary="Internal error" />
+<Condition id="2" summary="Out of memory" />
+<Condition id="3" summary="Object not found" />
+<Condition id="4" summary="Timeout" description="Response from the server was not received within configured time limit. Verify that the server address is correct." />
+<Condition id="5" summary="Unknown host" description="The server hostname could not be resolved. Check that DNS server is available." />
+<Condition id="6" summary="Connection lost" description="Connection with the server was closed before the HTTP request could be completed." />
+<Condition id="7" summary="Fatal socket error" description="Communication failed due to operating system problem or lack of resources." />
+<Condition id="9" summary="Connection refused" description="HTTP (or HTTPS) service is not running on the server. Verify that the server address and port number are specified correctly." />
+<Condition id="10" summary="Connection reset by peer"
+description="Connection was forcibly closed by the server. If communicating with SSL-enabled server make sure that the Agent is configured to use SSL." />
+<Condition id="11" summary="Connection aborted"
+description="Connection with the server was aborted by local operating system due to an error." />
+<Condition id="12" summary="Socket not connected" />
+<Condition id="23" summary="HTTP: bad response" description="A malformed response was received from the server. Verify that the server address, port number and the SSL settings are specified correctly." />
+<Condition id="25" summary="SSL: general error"
+description="An unexpected error occurred during (or upon establishing) SSL-enabled communication with the server." />
+<Condition id="26" summary="SSL: server's certificate verification failed" description="Name in the server certificate does not match with server address." />
+<Condition id="27" summary="SSL: server's certificate issuer unknown"
+description="Issuer of the server certificate is not trusted. Add server CA's certificate to the CA certificate file." />
+<Condition id="28" summary="SSL: invalid server certificate"
+description="The server certificate could not be verified because it is expired or otherwise invalid" />
+<Condition id="29" summary="SSL: handshake failed"
+description="SSL negotiation with the server failed. Verify that the server supports cipher suites used by the client at selected encryption strength level." />
+<Condition id="30" summary="Bad URL" description="Specified server URL is not properly formatted." />
+<Condition id="31" summary="Network unreachable"
+description="The server network could not be reached. Verify that the server IP addresses are
+specified correctly." />
+<Condition id="32" summary="Host unreachable" description="The server machine could not be reached. Verify that the server address is specified correctly, and the Agent machine is properly connected to the network." />
+<Condition id="33" summary="SSL: initialization error"
+description="Underlying SSL library could not be initialized. On Unix systems verify that the pseudo-random number generator device is accessible (you may need to install patch #112438 on Solaris 8)." />
+<Condition id="34" summary="SSL: CA certificate load failure" />
+<Condition id="35" summary="SSL: certificate load failure" />
+<Condition id="36" summary="SSL: private key load failure" />
+<Condition id="37" summary="Unknown error" />
+</Group>
+<Group id="proxy" summary="Proxy error" description="Error indicates a problem in communication via the proxy server">
+<Param id="proxy" name="Proxy server" />
+<Condition id="0" summary="No error" />
+<Condition id="1" summary="Internal error" />
+<Condition id="2" summary="Out of memory" />
+<Condition id="3" summary="Object not found" />
+<Condition id="4" summary="Timeout" description="Response from the proxy server was not received within configured time limit. Verify that proxy server address is correct." />
+<Condition id="5" summary="Unknown host" description="The proxy server hostname could not be resolved. Check that DNS server is available." />
+<Condition id="6" summary="Connection lost" description="Connection with the proxy server was closed before the HTTP request could be completed." />
+<Condition id="7" summary="Fatal socket error" description="Communication failed due to operating system problem or lack of resources." />
+<Condition id="8" summary="Operation would block" />
+<Condition id="9" summary="Connection refused" description="HTTP proxy service is not running on the proxy server. Verify that the proxy server address and port number are specified correctly." />
+<Condition id="10" summary="Connection reset by peer"
+description="Connection was forcibly closed by the proxy server." />
+<Condition id="11" summary="Connection aborted"
+description="Connection with the proxy server was aborted by local operationg system due to an error." />
+<Condition id="12" summary="Socket not connected" />
+<Condition id="13" summary="SOCKS: wrong version" />
+<Condition id="14" summary="SOCKS: authentication failed" />
+<Condition id="15" summary="SOCKS: general server failure" />
+<Condition id="16" summary="SOCKS: connection not allowed by rule set" />
+<Condition id="17" summary="SOCKS: network unreachable" />
+<Condition id="18" summary="SOCKS: host unreachable" />
+<Condition id="19" summary="SOCKS: connection refused" />
+<Condition id="20" summary="SOCKS: TTL expired" />
+<Condition id="21" summary="SOCKS: command not supported" />
+<Condition id="22" summary="SOCKS: address type not supported" />
+<Condition id="23" summary="HTTP: bad response" description="A malformed response was received from the proxy server. Verify that the proxy server address and port number are specified correctly." />
+<Condition id="24" summary="HTTP: authentication failed"
+description="Proxy server rejected Agent authentication credentials, or an error occurred during authentication. Verify that authentication user name and password are specified correctly." />
+<Condition id="25" summary="SSL: general error"
+description="An unexpected error occurred during (or upon establishing) SSL-enabled communication with the destination server." />
+<Condition id="26" summary="SSL: server's certificate verification failed" description="Name in the destination server certificate does not match server address." />
+<Condition id="27" summary="SSL: server's certificate issuer unknown"
+description="Issuer of the destination server certificate is not trusted. Add server CA's certificate to the CA certificate file." />
+<Condition id="28" summary="SSL: invalid server certificate"
+description="The destination server certificate could not be verified because it is expired or otherwise invalid" />
+<Condition id="29" summary="SSL: handshake failed"
+description="SSL negotiation with the destination server failed. Verify that the server supports cipher suites used by the client at selected encryption strength level." />
+<Condition id="30" summary="Bad URL" description="Specified URL is not properly formatted." />
+<Condition id="31" summary="Network unreachable"
+description="The proxy server network could not be reached. Verify that the proxy server address is specified correctly." />
+<Condition id="32" summary="Host unreachable" description="The proxy server machine could not be reached. Verify that the proxy server IP address is specified correctly, and the Agent machine is properly connected to the network." />
+<Condition id="33" summary="SSL: initialization error"
+description="Underlying SSL library could not be initialized. On Unix systems verify that the pseudo-random number generator device is accessible (you may need to install patch #112438 on Solaris 8)." />
+<Condition id="34" summary="SSL: CA certificate load failure" />
+<Condition id="35" summary="SSL: certificate load failure" />
+<Condition id="36" summary="SSL: private key load failure" />
+<Condition id="37" summary="Unknown error" />
+</Group>
+<Group id="pac" summary="PAC error" description="Error indicates a problem with Proxy Auto-Configuration">
+<Param id="url" name="PAC URL" />
+<Condition id="0" summary="No error" />
+<Condition id="1" summary="Out of memory" />
+<Condition id="2" summary="Bad URL" description="Specified PAC server URL is not properly formatted." />
+<Condition id="3" summary="PAC script evaluation program failure"
+description="An error occurred during execution of the PAC script evaluation program. Verify that the program (EPACEval) is accessible by the Agent." />
+<Condition id="4" summary="Invalid PAC script" description="Retrieved PAC script could not be evaluated due to a syntax error." />
+<Condition id="5" summary="Invalid PAC script output" description="The PAC script generated an invalid output. The output must contain at least one of the following: DIRECT; PROXY host:port; SOCKS host:port." />
+<Condition id="6" summary="PAC server communication failure"
+description="A communication error occurred while retrieving PAC script.">
+<Param id="status" name="HTTP status" />
+</Condition>
+</Group>
+<Group id="drm" summary="DRM communication error" description="Error indicates a problem in communication with the DRM server">
+<Condition id="0" summary="No error" />
+<Condition id="1" summary="DRM server is inaccessible"
+description="An error occurred while making request to the DRM server." />
+<Condition id="2" summary="Unexpected HTTP status" description="An HTTP status other than '200 OK' was received in the server response.">
+<Param id="status" name="HTTP status" />
+</Condition>
+<Condition id="3" summary="Symmetric decryption failed"
+description="The server response could not be decrypted. Verify that symmetric key file on the Agent matches the key on the server." />
+<Condition id="4" summary="Invalid server response" description="An invalid response was received from the server. This may be caused by an application error on the server side. Check server log files." />
+<Condition id="5" summary="Server database error" description="The server could not access specified database. Verify that database name is correct.">
+<Param id="database" name="Database name" />
+</Condition>
+</Group>
+</Diagnostics>

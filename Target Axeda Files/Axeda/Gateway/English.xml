@@ -1,0 +1,3148 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData TerseType="1">
+	<i>1</i>
+	<PointerList>
+		<EMsgSpec>
+			<i>0</i>
+			<s>"UNKNOWN Message!!!!!!!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1</i>
+			<s>"0"</s>
+		</EMsgSpec>
+		<!-- Component names -->
+		<EMsgSpec>
+			<i>2</i>
+			<s>"EAlarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>3</i>
+			<s>"xgAlarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>4</i>
+			<s>"EWebService"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>5</i>
+			<s>"xgWebService"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>6</i>
+			<s>"ELogger"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>7</i>
+			<s>"xgLogger"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>8</i>
+			<s>"EDataMgr"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>9</i>
+			<s>"xgDataMgr"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>10</i>
+			<s>"EDataSrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>11</i>
+			<s>"xgDataSrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>12</i>
+			<s>"EAuthProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>13</i>
+			<s>"xgAuthProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>14</i>
+			<s>"EEnterpriseProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>15</i>
+			<s>"xgEnterpriseProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>16</i>
+			<s>"Email"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>17</i>
+			<s>"xgEMail"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>18</i>
+			<s>"EExpression"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>19</i>
+			<s>"xgExpression"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>20</i>
+			<s>"EStateMonitor"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>21</i>
+			<s>"xgStateMonitor"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>22</i>
+			<s>"ENet"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>23</i>
+			<s>"xgNet"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>24</i>
+			<s>"EOPCSrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>25</i>
+			<s>"EOPCSrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>26</i>
+			<s>"ESecurity"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>27</i>
+			<s>"xgSecurity"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>28</i>
+			<s>"ETag"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>29</i>
+			<s>"xgTag"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>30</i>
+			<s>"EUPnP"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>31</i>
+			<s>"EUPnP"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>32</i>
+			<s>"EUpgrade"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>33</i>
+			<s>"xgUpgrade"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>34</i>
+			<s>"EVPISrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>35</i>
+			<s>"xgVPISrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>36</i>
+			<s>"EWeb"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>37</i>
+			<s>"xgWeb"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>38</i>
+			<s>"CustomComponent "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>39</i>
+			<s>"CustomComponent"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>40</i>
+			<s>"ERecipe"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>41</i>
+			<s>"xgRecipe"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>42</i>
+			<s>"ETimer"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>43</i>
+			<s>"xgTimer"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>44</i>
+			<s>"EWaagSrv"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>45</i>
+			<s>"xgWaagSrv"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>46</i>
+			<s>"EDialer"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>47</i>
+			<s>"xgDialer"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>48</i>
+			<s>"xGateway"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>49</i>
+			<s>"xGateway"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>50</i>
+			<s>"EEDDSrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>51</i>
+			<s>"xgEDDSrc"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>52</i>
+			<s>"Connector"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>53</i>
+			<s>"xGate"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>54</i>
+			<s>"ESoap"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>55</i>
+			<s>"xgSoap"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>56</i>
+			<s>"ENotify"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>57</i>
+			<s>"xgLogic"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>58</i>
+			<s>"ELogFile"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>59</i>
+			<s>"xgLogFile"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>60</i>
+			<s>"SNMPDriver"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>61</i>
+			<s>"SNMPDriver"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>62</i>
+			<s>"xBase"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>63</i>
+			<s>"xBase"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>64</i>
+			<s>"ESM"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>65</i>
+			<s>"xgSM"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>66</i>
+			<s>"EDeploy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>67</i>
+			<s>"xgDeploy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>68</i>
+			<s>"EScriptManager"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>69</i>
+			<s>"xgScriptManager"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>70</i>
+			<s>"ERCon"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>71</i>
+			<s>"xgRCon"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>72</i>
+			<s>"EAPMProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>73</i>
+			<s>"xgAPMProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>74</i>
+			<s>"EAutoProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>75</i>
+			<s>"xgAutoProxy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>76</i>
+			<s>"EFileWatch"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>77</i>
+			<s>"xgFileWatch"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>78</i>
+			<s>"ECustomHandlerClient"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>79</i>
+			<s>"xgCustomHandlerClient"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>80</i>
+			<s>"ETrapHandler"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>81</i>
+			<s>"xgTrapHandler"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>82</i>
+			<s>"EXMLDASrv"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>83</i>
+			<s>"xgXMLDASrv"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>84</i>
+			<s>"ETransport"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>85</i>
+			<s>"xgTransport"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>86</i>
+			<s>"ETrapListener"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>87</i>
+			<s>"xgTrapListener"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>88</i>
+			<s>"EPKIManager"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>89</i>
+			<s>"xgPKIManager"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>90</i>
+			<s>"ESyslogClient"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>91</i>
+			<s>"xgSyslogClient"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>92</i>
+			<s>"ERsa"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>93</i>
+			<s>"xgRsa"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>94</i>
+			<s>"ESMController"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>95</i>
+			<s>"xgSMController"</s>
+		</EMsgSpec>
+		<!-- This is the product name -->
+		<EMsgSpec>
+			<i>98</i>
+			<s>"Axeda Connector"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>99</i>
+			<s>"Axeda Gateway"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>100</i>
+			<s>"Ping mode need EnterpriseProxy component to run."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>101</i>
+			<s>"\t%s, version %d.%d build %.1f  %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>102</i>
+			<s>"Starting %s, version %d.%d.%d build %.1f  %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>103</i>
+			<s>"This is trial version of Axeda Agent"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>104</i>
+			<s>"Will be shut down in 2 hours."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>105</i>
+			<s>"========================================="</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>107</i>
+			<s>"\tModel Number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>108</i>
+			<s>"\tSerial Number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>109</i>
+			<s>"Backup Axeda Enterprise Server Settings:\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>110</i>
+			<s>"Server Address: %s\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>111</i>
+			<s>"One or more components returned error in PrepareToStart"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>112</i>
+			<s>"One or more components returned error in Restore"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>113</i>
+			<s>"One or more components returned error in PreStart"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>114</i>
+			<s>"One or more components returned error in Start"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>115</i>
+			<s>"%s is ready for communication"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>116</i>
+			<s>"Server port: %d\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>118</i>
+			<s>"%s.dll not supported under Windows CE.  Component not loaded."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>119</i>
+			<s>"%s does not have entry 'InitService'"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>120</i>
+			<s>"module %s could not be loaded with current license"</s>
+		</EMsgSpec>
+		<!-- This is used for  general purpose message output.  It is also used by the ILogMessage interface -->
+		<EMsgSpec>
+			<i>121</i>
+			<s>"%s"</s>
+		</EMsgSpec>
+		<!-- EKernelShell.cpp Messages  -->
+		<EMsgSpec>
+			<i>138</i>
+			<s>"Warm restart failed. Axeda Agent is restarting without data recovery..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>139</i>
+			<s>"Initiating a warm restart..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>140</i>
+			<s>"Another instance of %s is already running in the system "</s>
+		</EMsgSpec>
+		<!--	This is OLD -->
+		<EMsgSpec>
+			<i>141</i>
+			<s>"SSL Settings"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>142</i>
+			<s>"Prepare to Start Failed "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>143</i>
+			<s>"Restore Failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>144</i>
+			<s>"Exiting... Gateway must have at least one valid device. "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>145</i>
+			<s>"Gateway Model %s is disabled due to project load error."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>146</i>
+			<s>"Exiting... Gateway must have at least one enabled model / project."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>147</i>
+			<s>"PreStart Failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>148</i>
+			<s>"%s Failed to start"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>149</i>
+			<s>"%s Started"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>150</i>
+			<s>"Preparing to Stop."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>151</i>
+			<s>"%s PreparingToStop"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>152</i>
+			<s>"Prepare to Stop Failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>153</i>
+			<s>"Save Failed "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>154</i>
+			<s>"%s failed to stop"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>155</i>
+			<s>"%s stopped"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>156</i>
+			<s>"%s Shutdown"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>157</i>
+			<s>"Action %s(%s) error:  %x."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>158</i>
+			<s>"Time has been changed to %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>159</i>
+			<s>"Time Zone has been changed to GMT%+2d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>160</i>
+			<s>"Notification %s(%s)-&gt;%s(%s) is disabled"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>161</i>
+			<s>"Trigger component for notification %s not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>162</i>
+			<s>"Action component for notification %s not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>163</i>
+			<s>"Msg Handler receieved invalid function id - %d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>164</i>
+			<s>"Shutdown Message Received"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>165</i>
+			<s>"Notification subscriptions completed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>166</i>
+			<s>"Could not subscribe to %s(%s).  Err = %0x"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>167</i>
+			<s>"Execute Callback failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>168</i>
+			<s>"Callback %d, value %s to node %d done"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>169</i>
+			<s>"Resubscribe failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>170</i>
+			<s>"Unsubscribe failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>171</i>
+			<s>"Close failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>172</i>
+			<s>"Connection with Deployment Utility timed out."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>173</i>
+			<s>"Failed to add data source %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>174</i>
+			<s>"Do you want to reboot the system and save these settings (y/n)? %s\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>175</i>
+			<s>"Data Source %s already defined"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>176</i>
+			<s>"OpenBlockGroup: %s has no data source."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>177</i>
+			<s>"OpenBlockGroup: %s open failed."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>178</i>
+			<s>"Tag Group %s saved"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>179</i>
+			<s>"Tag Group %s and all its tags restored"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>180</i>
+			<s>"Tag %s saved"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>181</i>
+			<s>"Exit"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>182</i>
+			<s>"Tag Manager saved all tags."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>183</i>
+			<s>"Tag Manager saved all styles."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>184</i>
+			<s>"Data queue exceeded %i, data will be lost"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>185</i>
+			<s>"Data queue is at %i values"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>186</i>
+			<s>"Backup Axeda Enterprise Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>187</i>
+			<s>"Alarm queue overflow"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>188</i>
+			<s>"Alarm Component not loaded!\n"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>189</i>
+			<s>"Unknown SOAP method %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>190</i>
+			<s>"Web Client (%s): Message delivered: id=%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>191</i>
+			<s>"Discarding undelivered queue item (queue is full)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>192</i>
+			<s>"Discarding new item with lower priority (queue is full)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>193</i>
+			<s>"Server is unavailable: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>194</i>
+			<s>"Enterprise Queue Ready"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>195</i>
+			<s>"Enterprise Queue Empty"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>196</i>
+			<s>"Enterprise Queue Non-Empty"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>197</i>
+			<s>"Enterprise Queue Full"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>198</i>
+			<s>"Server is available: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>199</i>
+			<s>"Received event data: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>200</i>
+			<s>"Received e-mail data: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>201</i>
+			<s>"Received SOAP command status: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>202</i>
+			<s>"Received data: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>203</i>
+			<s>"Queue Processing Thread Exiting"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>204</i>
+			<s>"Received alarm data: source: %s, model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>205</i>
+			<s>"Received snapshot: source: %s, model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>206</i>
+			<s>"Invalid response to message sent to %s: id=%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>207</i>
+			<s>"Response parse failure for message sent to %s: id=%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>208</i>
+			<s>"Starting to use backup link"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>209</i>
+			<s>"Stopping to use backup link"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>210</i>
+			<s>"Backup link initialization timed out"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>211</i>
+			<s>"Symmetric decryption failed (%s)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>212</i>
+			<s>"Blowfish key file not found or invalid"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>213</i>
+			<s>"SOAP Parser not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>214</i>
+			<s>"SOAP Dispatcher not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>215</i>
+			<s>"License interface not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>216</i>
+			<s>"Unable to retrieve device model number"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>217</i>
+			<s>"Unable to retrieve device serial number"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>218</i>
+			<s>"Unable to retrieve device owner"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>219</i>
+			<s>"Enterprise Server address not found - Proxy layer disabled"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>220</i>
+			<s>"PAC script URL: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>221</i>
+			<s>"Web Client initialization failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>222</i>
+			<s>"Performing automatic proxy detection for server %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>223</i>
+			<s>"Primary server: %s (database: %s)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>224</i>
+			<s>"Backup server: %s (database: %s)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>225</i>
+			<s>"Additional server: %s (database: %s)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>226</i>
+			<s>"Gateway report successful: server %s: message id=%d, model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>227</i>
+			<s>"Web Client (%s): %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>228</i>
+			<s>"Unexpected HTTP status received while posting to %s: %d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>229</i>
+			<s>"Sending request to %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>230</i>
+			<s>"Setting proxy configuration"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>231</i>
+			<s>"Device has not been registered with server %s: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>232</i>
+			<s>"SSL certificate/key files are not found or invalid"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>233</i>
+			<s>"Posting message (%d bytes) to %s:\n%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>234</i>
+			<s>"??? not used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>235</i>
+			<s>"Device registered with server %s: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>236</i>
+			<s>"Registration failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>237</i>
+			<s>"Data update failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>238</i>
+			<s>"Times before 1970 not allowed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>239</i>
+			<s>"Hard restart requested"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>240</i>
+			<s>"Soft restart requested"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>241</i>
+			<s>"Enterprise  Invocation %s[%s] FAILED err=%08X"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>242</i>
+			<s>"EHttpClient:PostBlocking eIP=%s,ePort=%d,pIP=%s,proxyPort=%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>243</i>
+			<s>"EHttpClient data=\n%s\n"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>244</i>
+			<s>"EHttpClient:PostBlocking replyData=\n%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>245</i>
+			<s>"Message round-trip time: %f seconds."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>246</i>
+			<s>"Message did not get acknowledged."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>247</i>
+			<s>"Average message round-trip time: %f seconds.\n\r\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>248</i>
+			<s>"%s: FIPS mode enabled"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>249</i>
+			<s>"Enterprise Server IP: %s, port: %d, database: %s."</s>
+		</EMsgSpec>
+		<!-- End of EnterpProxy component messages -->
+		<EMsgSpec>
+			<i>250</i>
+			<s>"Could not load required %s.DLL. RAS installation required."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>251</i>
+			<s>"Could not find required RAS functions in %s.DLL."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>252</i>
+			<s>"Hanging up..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>253</i>
+			<s>"Hung up"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>254</i>
+			<s>"Dialing %s..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>255</i>
+			<s>"Connected"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>256</i>
+			<s>"Initialization function not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>257</i>
+			<s>"%d attempts failed. Giving up"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>258</i>
+			<s>"Next attempt after %d seconds"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>259</i>
+			<s>"Hangup failed. Error: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>260</i>
+			<s>"Dialing failed. Error: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>261</i>
+			<s>"Request to connect"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>264</i>
+			<s>"Request to connect refused since already connected or trying to connect"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>265</i>
+			<s>"Request to disconnect refused since not connected"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>266</i>
+			<s>"Request to disconnect"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>267</i>
+			<s>"Connection lost. Trying to reconnect..."</s>
+		</EMsgSpec>
+		<!--SNMP DRIVER Messages -->
+		<EMsgSpec>
+			<i>268</i>
+			<s>"Only one PUSHMODE data source allowed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>269</i>
+			<s>"SNMPTrapEvent"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>270</i>
+			<s>"Un-supported xml file version."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>271</i>
+			<s>"Empty Category, Model number, or Serial number."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>272</i>
+			<s>"Unexpected HTTP status received while retrieving PAC from %s: %d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>273</i>
+			<s>"Data Source Manager not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>274</i>
+			<s>"Error Loading DLL for authentication %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>275</i>
+			<s>"Error Load DLL for authentication %s."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>276</i>
+			<s>"No Appropriate Email Service"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>277</i>
+			<s>"Server name exceeds maximum %d characters."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>278</i>
+			<s>"Recipients list exceeds maximum %d characters."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>279</i>
+			<s>"Sender name exceeds maximum %d characters."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>280</i>
+			<s>"Sender address name exceeds maximum %d characters."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>281</i>
+			<s>"Subject exceeds maximum %d characters."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>282</i>
+			<s>"Attachment file name exceeds maximum %d characters."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>283</i>
+			<s>"Mail dropped because queue is full."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>284</i>
+			<s>"Mail to %s sent OK."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>285</i>
+			<s>"Mail to %s failed to send. Response code: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>286</i>
+			<s>"Mail to %s failed after %d tries.\r\n Error: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>287</i>
+			<s>"Authentication successful"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>288</i>
+			<s>"Authentication failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>289</i>
+			<s>"Could not open attachment: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>290</i>
+			<s>"Error %x in evaluation of expression %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>291</i>
+			<s>"Error %x in expression %s: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>292</i>
+			<s>"Error %x in expression %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>293</i>
+			<s>"Can not find directory for model: %s.  Model ignored!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>294</i>
+			<s>"%i Gateway devices defined"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>295</i>
+			<s>"Device owner: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>296</i>
+			<s>"    - model: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>297</i>
+			<s>"         - serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>298</i>
+			<s>"Auto Discovery requires a DLL name"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>299</i>
+			<s>"Unsupported auto discovery plug in: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>300</i>
+			<s>"%s:  Initialization function not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>301</i>
+			<s>"Automatically discovering %s devices..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>302</i>
+			<s>"%s:  Error reading configuration file"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>303</i>
+			<s>"Logfile Path can't be created!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>304</i>
+			<s>"Logfile Path can't be created: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>305</i>
+			<s>"Did not subscribe to disabled model: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>306</i>
+			<s>"Failed To Start Logger:  %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>307</i>
+			<s>"Failed To configure Logger schema:  %s for model %s, serial number %s."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>308</i>
+			<s>"Invalid data item name:  %s."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>309</i>
+			<s>"Data Source Manager not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>310</i>
+			<s>"Stopped"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>311</i>
+			<s>"Failed to add item: %s to OPC Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>312</i>
+			<s>"Write failed to item: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>313</i>
+			<s>"Find connection point failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>314</i>
+			<s>"Advise connection point failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>315</i>
+			<s>"IAdviseSink failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>316</i>
+			<s>"IDataObject not supported by this server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>317</i>
+			<s>"IDataObject::DAdvise failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>318</i>
+			<s>"IDataObject::DAdvise failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>319</i>
+			<s>"FindConnectionPoint failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>320</i>
+			<s>"Connect timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>321</i>
+			<s>"Disconnect timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>322</i>
+			<s>"Addgroup timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>323</i>
+			<s>"RemoveGroup timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>324</i>
+			<s>"SetupdateRate timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>325</i>
+			<s>"SetDeadband timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>326</i>
+			<s>"SetActiveState timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>327</i>
+			<s>"AddItem timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>328</i>
+			<s>"RemoveItem timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>329</i>
+			<s>"SetItemState timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>330</i>
+			<s>"ReadItem timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>331</i>
+			<s>"WriteItem timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>332</i>
+			<s>"SetCallback timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>333</i>
+			<s>"ResetCallback timed out for %s after %d ms."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>334</i>
+			<s>"ERROR: No OPC event being processed."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>335</i>
+			<s>"Trying to connect %s %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>336</i>
+			<s>"Local and Remote OPC servers not supported. Trying to connect server on node: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>337</i>
+			<s>"RegConnectRegistry failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>338</i>
+			<s>"RegOpenKey failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>339</i>
+			<s>"RegOpenKey failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>340</i>
+			<s>"RegQueryValue failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>341</i>
+			<s>"CLSIDFromString failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>342</i>
+			<s>"CoCreateInstance failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>343</i>
+			<s>"CoCreateInstanceEx failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>344</i>
+			<s>"MultiQI failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>345</i>
+			<s>"You may not have registered the OPC Proxy dll!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>346</i>
+			<s>"FindConnectionPoint failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>347</i>
+			<s>"Connection %s %s done"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>348</i>
+			<s>"FindConnectionPoint failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>349</i>
+			<s>"Disconnect %s %s completed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>350</i>
+			<s>"AddGroup() result timed out."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>351</i>
+			<s>"AddGroup() failed."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>352</i>
+			<s>"ReAddGroup() result timed out."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>353</i>
+			<s>"ReAddGroup() failed."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>354</i>
+			<s>"Added Group: %s successfully."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>355</i>
+			<s>"AddGroup Failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>356</i>
+			<s>"Group: %s removed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>357</i>
+			<s>"Restored Recipe %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>358</i>
+			<s>"Saved Recipes"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>359</i>
+			<s>"Unable to open %s, check name, error = %x"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>360</i>
+			<s>"Attempt to write non-analog value to recipe %s ignored"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>361</i>
+			<s>"Attempt to write value %d to empty recipe %s ignored"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>362</i>
+			<s>"Attempt to write value %d to recipe %s ignored; recipe has %d columns"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>363</i>
+			<s>"Invalid value for %s in column %d of recipe %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>364</i>
+			<s>"Restore() User name: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>365</i>
+			<s>"Restore() User description: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>366</i>
+			<s>"Restore() User password: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>367</i>
+			<s>"Restore() Group: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>368</i>
+			<s>"Invalid User: %s :attempted to Request Login"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>369</i>
+			<s>"User: %s :attempted to Login with invalid Password"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>370</i>
+			<s>"Invalid User: %s :attempted to Login"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>371</i>
+			<s>"RequestLogin User name: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>372</i>
+			<s>"Login User name: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>373</i>
+			<s>"IsUserMemberofGroup group name: %s %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>374</i>
+			<s>"%s - action not supported"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>375</i>
+			<s>"Time set back "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>376</i>
+			<s>"Started"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>377</i>
+			<s>"Terminating Upgrade protocol due to shutdown"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>378</i>
+			<s>"Uc: File already downloading, starting from the beginning: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>379</i>
+			<s>"Dc: File already downloading, starting from the beginning: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>380</i>
+			<s>"Download failure from server: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>381</i>
+			<s>"Skipping download of: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>382</i>
+			<s>"Error downloading file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>383</i>
+			<s>"Completed downloading file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>384</i>
+			<s>"Sc: Could not find file %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>385</i>
+			<s>"Posting initial upload request."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>386</i>
+			<s>"Error uploading: %s id: %s ix:%d errorCode:%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>387</i>
+			<s>"No more files to upload"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>388</i>
+			<s>"Downloading: %s: Index: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>389</i>
+			<s>"Finished downloading: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>390</i>
+			<s>"Download Complete"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>391</i>
+			<s>"CopyDownloadedFileToROM failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>392</i>
+			<s>"CheckDownloadedFile failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>393</i>
+			<s>"Posting download request."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>394</i>
+			<s>"Posting upload request."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>395</i>
+			<s>"Updating ROM sector: %d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>396</i>
+			<s>"Updating ROM sector: %d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>397</i>
+			<s>"Failed to Initialize"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>398</i>
+			<s>"Max connections reached. Connection from %s rejected."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>399</i>
+			<s>"Post Took %d seconds"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>400</i>
+			<s>"Post Failure:kerr=%08X tcperr=%08X"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>401</i>
+			<s>"HTTP 1.1 only. HTTP 1.0 connection from %s rejected."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>402</i>
+			<s>"mismatched encryption"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>403</i>
+			<s>"Post Failure:kerr=%08X tcperr=%08X"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>404</i>
+			<s>"EWeb - 0 bytes received, socket error: %d:  resetting socket"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>405</i>
+			<s>"EWeb - socket error: %d:  resetting socket"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>406</i>
+			<s>"SYSTEM FAILED TO ALLOCATE %i bytes! %i physical bytes available.  EXPECT SYSTEM INSTABILITY"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>407</i>
+			<s>"VpiMain not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>408</i>
+			<s>"PrintVPIMessage failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>409</i>
+			<s>"Cold Start VPI failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>410</i>
+			<s>"Unable to uncook value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>411</i>
+			<s>"Unable to cook value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>412</i>
+			<s>"%s is configured wrong."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>413</i>
+			<s>"Unable to cook value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>414</i>
+			<s>"VPI %s doesn't support strings in version %d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>415</i>
+			<s>"VPI %s failed to parse address %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>416</i>
+			<s>"Addr: %s, size: %d."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>417</i>
+			<s>"ParseBlock failed: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>418</i>
+			<s>"AddBlockItem failed: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>419</i>
+			<s>"Data Source Manager not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>420</i>
+			<s>"Queue overflow, alarm lost"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>421</i>
+			<s>"Could not subscribe to data item: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>422</i>
+			<s>"Preparing to stop"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>423</i>
+			<s>"Could not subscribe to data item: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>424</i>
+			<s>"%s - trigger not supported:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>425</i>
+			<s>"Saving Alarm Filter %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>426</i>
+			<s>"Restored Alarm Filter %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>427</i>
+			<s>"Restored Alarm for data item %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>428</i>
+			<s>"%s does not have a defined range. Can not calculate deviation alarm."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>429</i>
+			<s>"Email OK -&gt; %s"</s>
+		</EMsgSpec>
+		<!-- Alarm states -->
+		<EMsgSpec>
+			<i>430</i>
+			<s>"Rate of Change Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>431</i>
+			<s>"Custom Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>432</i>
+			<s>"Digital Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>433</i>
+			<s>"Low Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>434</i>
+			<s>"High Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>435</i>
+			<s>"LoLo Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>436</i>
+			<s>"HiHi Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>437</i>
+			<s>"Minor Deviation Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>438</i>
+			<s>"Major Deviation Alarm"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>439</i>
+			<s>"unknown Alarm message"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>440</i>
+			<s>"Added device owner: %s, model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>441</i>
+			<s>"RunTime - PreStart Failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>442</i>
+
+			<s>"%s Failed to re-start"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>443</i>
+			<s>"%s Re-Started"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>444</i>
+			<s>"Gateway Model %s is disabled due to project load error."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>445</i>
+			<s>"Posting upgrade request."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>446</i>
+			<s>"Finished uploading: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>447</i>
+			<s>"Checking for time-out for missing device. model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>448</i>
+			<s>"Setting device off-line. model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>449</i>
+			<s>"Setting device on-line. model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>450</i>
+			<s>"Device status OK. model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>451</i>
+			<s>"Gateway loaded without xgEnterpriseProxy component"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>452</i>
+			<s>"Counter (%s) being executed recursively; execution ignored."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>453</i>
+			<s>"Failed to load policy action group definitions from %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>454</i>
+			<s>"Failed to retrieve local policy from Deployment component"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>455</i>
+			<s>"Using local policy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>456</i>
+			<s>"Failed to apply local policy"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>457</i>
+			<s>"Received message (%d bytes) from %s:\n%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>458</i>
+			<s>"AES (128 bit) encryption used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>459</i>
+			<s>"\tPlease see LegalNotices.txt for important licensing and patent information."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>460</i>
+			<s>"paused"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>461</i>
+			<s>"General error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>462</i>
+			<s>"Unsupported protocol version"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>463</i>
+			<s>"Incorrect package format"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>464</i>
+			<s>"Unsupported package action"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>465</i>
+			<s>"Unsupported function"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>466</i>
+			<s>"Unknown data item name in dependency"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>467</i>
+			<s>"Unknown registry entry name"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>468</i>
+			<s>"Failed to read or parse registry file; dependency can not be executed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>469</i>
+			<s>"The operator or expected value in dependency is invalid"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>470</i>
+			<s>"Upload: no explicitly defined files found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>471</i>
+			<s>"Upload: not all explicitly defined files were found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>472</i>
+			<s>"Failed to execute first file in download"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>473</i>
+			<s>"Archiving error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>474</i>
+			<s>"Failed to read archive being uploaded"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>475</i>
+			<s>"Unexpected HTTP status"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>476</i>
+			<s>"Chunk checksum error during download"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>477</i>
+			<s>"Networking error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>478</i>
+			<s>"SOCKS proxy error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>479</i>
+			<s>"HTTP communication error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>480</i>
+			<s>"SSL error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>481</i>
+			<s>"XML file for Counters not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>482</i>
+			<s>"Old version of XML file for Upgrade Component not supported"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>483</i>
+			<s>"Package aborted"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>484</i>
+			<s>"File checksum error during download"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>485</i>
+			<s>"Partially uploaded file missing at upload request"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>486</i>
+			<s>"Could not open file: %s to save time zone. Make sure it is writable."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>487</i>
+			<s>"Reading Tag (%s) when it is not being scanned, using last read value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>488</i>
+			<s>"SOAP RPC Set Tag:  %s passed."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>489</i>
+			<s>"SOAP RPC Set Tag:  %s failed."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>490</i>
+			<s>"Registration successful. model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>491</i>
+			<s>"Registration failed!  model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>492</i>
+			<s>"Can not find directory for model: %s; using model number or alpha numeric directory: %s.  Model ignored!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>493</i>
+			<s>"OID not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>494</i>
+			<s>"bad object value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>495</i>
+			<s>"object is read-only"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>496</i>
+			<s>"general error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>497</i>
+			<s>"no access to object"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>498</i>
+			<s>"wrong value type"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>499</i>
+			<s>"wrong value length"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>500</i>
+			<s>"wrong value encoding"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>501</i>
+			<s>"wrong value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>502</i>
+			<s>"object creation not allowed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>503</i>
+			<s>"inconsistent value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>504</i>
+			<s>"resource unavailable"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>505</i>
+			<s>"commit failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>506</i>
+			<s>"undo failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>507</i>
+			<s>"authorization error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>508</i>
+			<s>"object not writable"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>509</i>
+			<s>"bad OID"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>510</i>
+			<s>"bad write variable"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>511</i>
+			<s>"write failure"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>512</i>
+			<s>"packet error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>513</i>
+			<s>"bad XML file"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>514</i>
+			<s>"bad argument"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>515</i>
+			<s>"bad IP address"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>516</i>
+			<s>"operation timed out"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>517</i>
+			<s>"unknown error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>518</i>
+			<s>"SNMP Get failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>519</i>
+			<s>"SNMP Set failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>520</i>
+			<s>"SNMP operation failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>521</i>
+			<s>" Package status is %s (model = %s, serial = %s) "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>522</i>
+			<s>" Package status error code is %i (%s) at instruction %i (model = %s, serial = %s) "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>523</i>
+			<s>"queued"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>524</i>
+			<s>"started"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>525</i>
+			<s>"success"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>526</i>
+			<s>"error "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>527</i>
+			<s>"canceled"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>528</i>
+			<s>"timed-out"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>529</i>
+			<s>"&gt;&gt;  INTERNAL DEBUG MESSAGE &lt;&lt; :  %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>530</i>
+			<s>"COM port open error number: %d. Deployment utility serial communication is disabled."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>532</i>
+			<s>"Axeda Policy Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>559</i>
+			<s>"No Axeda Enterprise Server Used\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>568</i>
+			<s>"Blowfish (448 bit) encryption used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>571</i>
+			<s>"low"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>572</i>
+			<s>"medium"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>573</i>
+			<s>"high"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>642</i>
+			<s>"No HTTP proxy server used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>643</i>
+			<s>"HTTP proxy server: %s:%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>644</i>
+			<s>"No SOCKS proxy server used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>645</i>
+			<s>"SOCKS proxy server: %s:%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>646</i>
+			<s>"No symmetric encryption used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>647</i>
+			<s>"SSL enabled with %s-strength ciphers"</s>
+		</EMsgSpec>
+		<!--Leave space for more Deploy strings. -->
+		<EMsgSpec>
+			<i>649</i>
+			<s>"All timers are reset"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>650</i>
+			<s>"Executing file %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>651</i>
+			<s>"Execution failed!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>652</i>
+			<s>"Failed to backup file %s  to %s during download - upgrade"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>653</i>
+			<s>"Package processing ABORTED!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>654</i>
+			<s>" Downloading file: %s from %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>655</i>
+			<s>" Uploading file: %s to %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>656</i>
+			<s>" ... Download percent done = %i%%"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>657</i>
+			<s>" ... Upload percent done = %i%%"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>658</i>
+			<s>" Writing to %s; package will not report success status to Enterprise Server after restart"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>659</i>
+			<s>" Failed to read the %s file. Package restart status not sent to Enterprise Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>660</i>
+			<s>" Registry file: %s, not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>661</i>
+			<s>"Failed in reading or parsing registry file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>662</i>
+			<s>"Could not Load custom license DLL: %s."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>663</i>
+			<s>"Socket listen failed. Tool configure for TCP/IP disabled."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>664</i>
+			<s>"Mail to %s failed to send. Did not get response from Server."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>665</i>
+			<s>"Mail to %s failed to send. No Service available."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>666</i>
+			<s>"Mail to %s failed to send. Server name is invalid."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>667</i>
+			<s>"Mail to %s failed to send. Socket creation error."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>668</i>
+			<s>"Mail to %s failed to send. Socket connection error."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>669</i>
+			<s>"Mail to %s failed to send. Socket send error."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>670</i>
+			<s>"Spool file path can't be created!"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>671</i>
+			<s>" Registry file not successfully uploaded to Enterprise Server "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>672</i>
+			<s>"Registry file not successfully uploaded to Enterprise Server for model: %s, serial number: %s "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>673</i>
+			<s>"Registry file: %s is being uploaded to Enterprise Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>674</i>
+			<s>"Checksum failed for downloaded chunk"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>675</i>
+			<s>"Enterprise Server File destination is unavailable"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>676</i>
+			<s>"Mail component is not loaded. E-Mail service will not be available."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>677</i>
+			<s>"Could not open log file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>678</i>
+			<s>"Could not deliver files to Enterprise Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>679</i>
+			<s>"Could not deliver file to EMail Recipient"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>680</i>
+			<s>"Failed to read model from host %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>681</i>
+			<s>"Failed to read serial number from host %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>682</i>
+			<s>"%s: %s (host: %s; OIDs: %s)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>683</i>
+			<s>"Found supported device at %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>684</i>
+			<s>"Found unsupported device at %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>685</i>
+			<s>"Using community '%s'..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>686</i>
+			<s>"Device at %s: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>687</i>
+			<s>"Deployment configurations are used."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>688</i>
+			<s>"Mail to %s failed during POP3 authentication."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>689</i>
+			<s>"Script action names must be unique. Script %s is discarded."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>690</i>
+			<s>"Bad script action: %X. Script %s is discarded."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>691</i>
+			<s>"Failed to open SNMP table column: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>692</i>
+			<s>"rolling back"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>693</i>
+			<s>"rollback error "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>694</i>
+			<s>"rollback success"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>695</i>
+			<s>"dependency failed "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>696</i>
+			<s>"Temporary directory %s can not be created "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>697</i>
+			<s>"\t6. Model Number and Serial Number disabled under Gateway\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>698</i>
+			<s>"Session %s started"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>699</i>
+			<s>"Session %s ended"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>700</i>
+			<s>"Session: %s. Invalid protocol version"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>701</i>
+			<s>"Data Item: %s, with value: %s."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>702</i>
+			<s>"Session is disabled. Please make another selection. Return to the main menu.\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>703</i>
+			<s>"The EDD driver is in polling mode only.\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>704</i>
+			<s>"Only one client data item for one server data item.\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>705</i>
+			<s>"Can not execute SOAP command %s.%s.  (Check if correct  component is loaded). "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>706</i>
+			<s>"Error occurred in session %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>707</i>
+			<s>"Error uploading file, Software Management component not loaded\n"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>708</i>
+			<s>"CreateProcess failed: %s.\n"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>709</i>
+			<s>"Inhibited file(s) from being uploaded"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>774</i>
+			<s>"Bad script: sequence file: (%s) for script: (%s) not found."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>775</i>
+			<s>"Register script: (%s) with return code %x."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>776</i>
+			<s>"Unregister script: (%s) with return code %x."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+
+			<i>778</i>
+			<s>"Failed to run script: (%s) with error: %x."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>779</i>
+			<s>"Failed to run script: (%s). This script is already running."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>880</i>
+			<s>"Can not add/modify/remove an auto-discovered device"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>881</i>
+			<s>"Model configuration not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>883</i>
+			<s>"Can not ping without valid Enterprise server address.\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>890</i>
+			<s>"The Axeda Policy Server is disabled.\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>891</i>
+			<s>"The Axeda Policy Server is off-line.\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>892</i>
+			<s>"The Axeda Policy Server is on-line.\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>893</i>
+			<s>"Custom model number and serial serial used from DLL: %s."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>894</i>
+			<s>"Device UUID file decryption failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>895</i>
+			<s>"Scheduling failed. Model: %s, Device: %s, Timer: %s, Script: %s, error: %x\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>896</i>
+			<s>"New policy received from Axeda Policy Server for model:  %s, serial number:  %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>897</i>
+			<s>"Data item is too large (discarded)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>898</i>
+			<s>"String replacement failed: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>899</i>
+			<s>"Network Configuration"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>900</i>
+			<s>"Project Settings"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>901</i>
+			<s>"Troubleshooting"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>902</i>
+			<s>"Maintenance"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>905</i>
+			<s>"Switching to backup server: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>906</i>
+			<s>"Switching to main server: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>907</i>
+			<s>"Entering maintenance mode with server: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>908</i>
+			<s>"Exiting maintenance mode with server: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>909</i>
+			<s>"Can not open APM policy file (%s). Enterprise Server communication is disabled for device: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>910</i>
+			<s>"Invalid APM policy file (%s).  Enterprise Server communication is disabled for device: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>911</i>
+			<s>"Reading APM policy file %s for device: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>912</i>
+			<s>"Model and serial number of APM policy file %s  does not match device: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>913</i>
+			<s>" Invalid APM audit log file (%s), audit information may have been  lost for device: model: %s, serial number: %s "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>914</i>
+			<s>" File %s exceeds max size, file is being overwritten"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>915</i>
+			<s>" Retrieving policy definition from Axeda Policy Server "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>916</i>
+			<s>"Snapshot file parsing error with tag : %s, item name : %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>917</i>
+			<s>"Server is not accessible : %s:%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>918</i>
+			<s>"Send %d bytes, received %d bytes. Seq #%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>919</i>
+			<s>"%d packets sent. %d bytes sent, %d bytes received in %dms"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>920</i>
+			<s>"Ping failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>921</i>
+			<s>"Performed testing of HTTP parameters"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>924</i>
+			<s>"Script %s timeout.  Terminated process:  %s for model  %s, serial number %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>925</i>
+			<s>"ATTEMPTED TO ADD MORE TAGS THAN ALLOWED BY LICENSE."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>926</i>
+			<s>"Failed to retrieve PAC from %s: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>927</i>
+			<s>"PAC: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>928</i>
+			<s>"destination URL invalid"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>929</i>
+			<s>"script evaluation program execution failure"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>930</i>
+			<s>"invalid script"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>931</i>
+			<s>"invalid script output"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>932</i>
+			<s>"communication with PAC server failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>933</i>
+			<s>"Enter Proxy Auto-Configuration URL: %s\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>934</i>
+			<s>"Proxy Auto-Configuration URL: %s\n\r"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>935</i>
+			<s>"Using proxy: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>936</i>
+			<s>"Absolute path in use: %s. Object is watched by device: model: %s, serial number: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>937</i>
+			<s>"Duplicate object: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>938</i>
+			<s>"2 Hour time limit expired for trial version"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>939</i>
+			<s>"Directory is missing: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>940</i>
+			<s>"This is trial version of Axeda Agent"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>941</i>
+			<s>"Will be shut down in 2 hours."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>942</i>
+			<s>"Failed in reading Deployment Utility communication"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>943</i>
+			<s>"Failed in writing to Deployment Utility"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>944</i>
+			<s>"Started communicating with the Deployment Utility"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>945</i>
+			<s>"Stopped communicating with the Deployment Utility"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>946</i>
+			<s>"??? not used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>947</i>
+			<s>"??? not used"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>948</i>
+			<s>"pppd not found"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>949</i>
+			<s>"Rediscovering devices for Deployment Utility"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>950</i>
+			<s>"Error loading custom handler library %s: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>951</i>
+			<s>" Connecting to Enterprise Server via modem on behalf of the Deployment Utility"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>952</i>
+			<s>" Disconnecting from Enterprise Server via modem on behalf of the Deployment Utility "</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>953</i>
+			<s>"Deleting Deployment configuration file %s due to checksum failure"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>954</i>
+			<s>"Alarm not acknowledged.  %s does not exist in Alarm queue."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>955</i>
+			<s>"Queue overflow, removed alarm %s (model = %s, serial = %s)"</s>
+		</EMsgSpec>
+		<!-- Log File headers  -->
+		<EMsgSpec>
+			<i>956</i>
+			<s>"Date"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>957</i>
+			<s>"Time"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>958</i>
+			<s>"Source"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>959</i>
+			<s>"Description"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>960</i>
+			<s>"Condition"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>961</i>
+			<s>"Subcondition"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>962</i>
+			<s>"Activeness"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>963</i>
+			<s>"Acknowledgment"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>964</i>
+			<s>"Severity"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>965</i>
+			<s>"Trigger Value"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>966</i>
+			<s>"Successfully imported data: model number: %s, serial number: %s, file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>967</i>
+			<s>"Could not import data: model number: %s, serial number: %s, file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>968</i>
+			<s>"Successfully exported data: model number: %s, serial number: %s, file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>969</i>
+			<s>"Could not export data: model number: %s, serial number: %s, file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>970</i>
+			<s>"%s: FIPS mode disabled"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>971</i>
+			<s>"Successfully extracted import archive: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>972</i>
+			<s>"Failed extracting import archive: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>973</i>
+			<s>"Could not read index file in import archive: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>974</i>
+			<s>"Checksum mismatch for file %s in import archive: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>975</i>
+			<s>"Successfully created export archive: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>976</i>
+			<s>"Failed to create export archive: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>977</i>
+			<s>"Could not create index file for import archive: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>978</i>
+			<s>"Synchronizing devices managed with Enterprise Server..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>979</i>
+			<s>"Devices under management synchronized with Enterprise Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>980</i>
+			<s>"Could not read SNMP settings from %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>981</i>
+			<s>"Could not read auto-discovery configuration from %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>982</i>
+			<s>"Cannot listen on SNMP trap port"</s>
+		</EMsgSpec>
+		<!-- State Monitoring Messages -->
+		<EMsgSpec>
+			<i>983</i>
+			<s>"%s attribute is expected"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>984</i>
+			<s>"Data Item %s is expected to be of type analog"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>985</i>
+			<!-- state - value of xxx can not be converted to the data type of the monitor... -->
+			<s>"%s - %s of %s can not be convert to the data type of the %s's data item"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>986</i>
+			<s>"Must define a Monitor-State with the attribute type=uncertain."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>987</i>
+			<s>"Error writing to file %s.  File deleted."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>988</i>
+			<s>"Error reading to file %s.  File deleted."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>989</i>
+			<s>"File %s has an invalid format. It does not match the monitoring configuration. File deleted."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>990</i>
+			<s>"File %s is invalid.  File deleted."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>991</i>
+			<s>"File %s has an invalid checksum.  File deleted."</s>
+		</EMsgSpec>
+		<!-- Web Service Messages -->
+		<EMsgSpec>
+			<i>992</i>
+			<s>"Processing Web Service Function:  %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>993</i>
+			<s>"WebServer component is required"</s>
+		</EMsgSpec>
+		<!-- Begin: Used in Software Management -->
+		<EMsgSpec>
+			<i>994</i>
+			<s>"Pausing all file transfers..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>995</i>
+			<s>"Resuming all file transfers."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>996</i>
+			<s>"Cancel all software management packages."</s>
+		</EMsgSpec>
+		<!-- End: Used in Software Management -->
+		<EMsgSpec>
+			<i>997</i>
+			<s>"HTTP error: %s for session %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>998</i>
+			<s>"Could not listen on port: %d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>999</i>
+			<s>"Using %s for remote authentication"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1000</i>
+			<s>"SSL is not supported"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1001</i>
+			<s>"Requested directory can not be created"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1002</i>
+			<s>"Restart instruction can not be used with managed device"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1003</i>
+			<s>"Custom function error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1004</i>
+			<s>"No error"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1005</i>
+			<s>"Multi-file transfer without compression requested"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1006</i>
+			<s>"Unknown package error code"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1007</i>
+			<s>"Failure loading trusted certificate: profile=%s:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1008</i>
+			<s>"Failure adding trusted certificate: profile=%s:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1009</i>
+			<s>"Failure creating directory for revocation data: profile=%s; directory=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1010</i>
+			<s>"Failure writing %s data to file: profile=%s; file=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1011</i>
+			<s>"Failure requesting %s data: profile=%s; URL=%s; error=%s; status=%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1012</i>
+			<s>"Protocol for accessing %s data not supported: profile=%s; URL=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1013</i>
+			<s>"Failure parsing %s data: profile=%s; URL=%s; object=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1014</i>
+			<s>"Failure validating %s data: profile=%s; URL=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1015</i>
+			<s>"Certificate revoked: profile=%s; method=%s:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1016</i>
+			<s>"%s check failed for certificate: profile=%s:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1017</i>
+			<s>"Unexpected OCSP response status: profile=%s; URL=%s; status=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1018</i>
+			<s>"Failure creating OCSP request for certificate: profile=%s:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1019</i>
+			<s>"Failure verifying certificate: profile=%s:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1020</i>
+			<s>"SSL enabled with cipher suites: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1021</i>
+			<s>"Failed to establish direct connection to %s:%d"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1022</i>
+			<s>"Failed to complete SSL handshake for direct connection to %s:%d: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1023</i>
+			<s>"Invalid SSL cipher suite list"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1024</i>
+			<s>"SSL error in Deployment Utility communication: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1025</i>
+			<s>"%s: Authentication failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1026</i>
+			<s>"Both identity certificate and private key must be present: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1027</i>
+			<s>"Failure loading identity certificate: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1028</i>
+			<s>"Failure loading identity private key: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1029</i>
+			<s>"Failure setting identity certificate or private key: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1030</i>
+			<s>"Invalid filter expression for action: model=%s, serial number=%s, action=%s, %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1031</i>
+			<s>"Unknown symbol in filter expression for action: model=%s, serial number=%s, action=%s, %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1032</i>
+			<s>"Function execution error in filter expression for action: model=%s, serial number=%s, action=%s, %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1033</i>
+			<s>"Action succeeded"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1034</i>
+			<s>"Action failed"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1035</i>
+			<s>"Action was denied"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1036</i>
+			<s>"Action was undefined"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1037</i>
+			<s>"Invalid filter expression, reason: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1038</i>
+			<s>"Unknown symbol in filter expression, reason: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1039</i>
+			<s>"Function execution error in filter expression, reason: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1040</i>
+			<s>"Permission filter evaluated, reason: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1041</i>
+			<s>"Permission filter evaluated: model=%s, serial number=%s, action=%s, %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1042</i>
+			<s>"Error retrieving applicable packages from server: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1043</i>
+			<s>"Error deploying packages on server: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1044</i>
+			<s>"Failure setting cipher suite list: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1045</i>
+			<s>"User credentials are required for authentication"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1047</i>
+			<s>"Hostname %s did not match subject CN and subject alternative names: profile=%s:"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1050</i>
+			<s>"Agent model number not configured"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1051</i>
+			<s>"Agent serial number not configured"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1052</i>
+			<s>"Waiting for restart..."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1053</i>
+			<s>"Creating RSA Lockbox."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1054</i>
+			<s>"Failed to create RSA Lockbox.  Error:  %s  Error code = %i."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1055</i>
+			<s>"Failed when reading from RSA Lockbox.  Error:  %s  Error code = %i."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1056</i>
+			<s>"Failed when writing to RSA Lockbox.  Error:  %s  Error code = %i."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1057</i>
+			<s>"Switching to use Lightweight Ping version 1 due to failure of version 2 ping."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1058</i>
+			<s>"The identity certificate is already defined for profile '%s'; it will NOT be overwritten by content of the secure store."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1059</i>
+			<s>"The trust certificate is already defined for profile '%s'; it will NOT be overwritten by content of the secure store."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1060</i>
+			<s>"Using identity certificate for profile '%s' from secure store."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1061</i>
+			<s>"Using trust certificate for profile '%s' from secure store."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1062</i>
+			<s>"Discarding new item (queue is full)"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1063</i>
+			<s>"Invalid policy received from Axeda Policy Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1064</i>
+			<s>"Invalid response received from Axeda Policy Server"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1065</i>
+			<s>"Failed to set number of stable values for RSA Lockbox.  Error:  %s  Error code = %i."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1066</i>
+			<s>"Failed to load RSA Lockbox libraries from %s.  Error:  %s  Error code = %i."</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1067</i>
+			<s>"Could not load certificate"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1068</i>
+			<s>"Could not load private key"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1069</i>
+			<s>"Private key does not match certificate"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1070</i>
+			<s>"Could not open PKI profile file: %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1080</i>
+			<s>"Could not open Data Protection master key"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1081</i>
+			<s>"Could create Data Protection master key"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1082</i>
+			<s>"I/O error reading Data Protection master key"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1083</i>
+			<s>"I/O error writing Data Protection master key"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1084</i>
+			<s>"Data Protection master key is invalid"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1085</i>
+			<s>"Could not find master key for data unprotection/authentication"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1086</i>
+			<s>"Deployment Utility connected over insecure connection cannot be authenticated using hashed password"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1087</i>
+			<s>"Data could not be encrypted by %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1088</i>
+			<s>"Data could not be decrypted by %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1089</i>
+			<s>"Data MAC could not be created by %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1090</i>
+			<s>"Data MAC could not be verified by %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1091</i>
+			<s>"File MAC could not be created by %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1092</i>
+			<s>"File MAC could not be verified by %s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1093</i>
+			<s>"Failure loading trust configuration: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1094</i>
+			<s>"Failure loading identity configuration: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1095</i>
+			<s>"Failure loading revocation checking configuration: profile=%s"</s>
+		</EMsgSpec>
+		<EMsgSpec>
+			<i>1096</i>
+			<s>"Failure decrypting private key password"</s>
+		</EMsgSpec>
+
+	</PointerList>
+</PersistedData>

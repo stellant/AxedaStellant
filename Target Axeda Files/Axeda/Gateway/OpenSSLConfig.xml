@@ -1,0 +1,13 @@
+<OpenSSLConfig>
+    <FIPSMode>false</FIPSMode>
+    <!--
+      -- IMPORTANT: If the FIPS mode is enabled, and the Agent directly
+      -- communicates with a Java-based SSL/TLS server (such as Axeda
+      -- Enterprise Server running on JBoss, Axeda GAS running on Tomcat, or
+      -- Axeda Policy Server running on Tomcat), the cipher suite list should
+      -- include !kEDH element (as shown below). Otherwise, ephemeral Diffie-
+      -- Hellman (EDH) key exchange may fail.
+      --
+    <CipherSuites>DEFAULT:!kEDH</CipherSuites>
+      -->
+</OpenSSLConfig>

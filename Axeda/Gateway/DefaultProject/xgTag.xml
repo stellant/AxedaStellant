@@ -1,0 +1,261 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData moduleName="xgTag" TerseType="1">
+<i>7</i>
+<s>"Root"</s>
+<s>""</s>
+<i>0</i>
+<s>""</s>
+<s>""</s>
+<s>""</s>
+<s>""</s>
+<PointerList>
+	<CTag>
+		<r>"0.000000000000000"</r>
+		<r>"0.000000000000000"</r>
+		<i>3</i>
+		<i>192</i>
+		<s>"Starting"</s>
+		<s>"ConnectivityStatus"</s>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+		<i>0</i>
+		<i>7</i>
+		<i>0</i>
+		<i>1</i>
+	</CTag>
+	<CTagGroup>
+		<s>"Contract_Information"</s>
+		<i>0</i>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+	<PointerList>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>192</i>
+			<s>"No Contract Information"</s>
+			<s>"End_Date"</s>
+			<s>".Contract_Information"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<i>0</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>192</i>
+			<s>"No Contract Information"</s>
+			<s>"Start_Date"</s>
+			<s>".Contract_Information"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<i>0</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>192</i>
+			<s>"No Contract Information"</s>
+			<s>"Type"</s>
+			<s>".Contract_Information"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<i>0</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		</PointerList>
+		</CTagGroup>
+	<CTagGroup>
+		<s>"Injector_Properties"</s>
+		<i>0</i>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+		<s>"Contains Injector Properties "</s>
+	<PointerList>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>64</i>
+			<s>" "</s>
+			<s>"CRU_ID"</s>
+			<s>".Injector_Properties"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>"[EDD].Local.EDD_XML.EDD_XML"</s>
+			<s>"CRU_ID"</s>
+			<s>""</s>
+			<i>1</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>64</i>
+			<s>" "</s>
+			<s>"Injector_Software_Version"</s>
+			<s>".Injector_Properties"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>"[EDD].Local.EDD_XML.EDD_XML"</s>
+			<s>"Injector_Software_Version"</s>
+			<s>""</s>
+			<i>1</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>64</i>
+			<s>" "</s>
+			<s>"Injector_Type"</s>
+			<s>".Injector_Properties"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>"[EDD].Local.EDD_XML.EDD_XML"</s>
+			<s>"Injector_Type"</s>
+			<s>""</s>
+			<i>1</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>64</i>
+			<s>" "</s>
+			<s>"Last_Critical_Error"</s>
+			<s>".Injector_Properties"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>"[EDD].Local.EDD_XML.EDD_XML"</s>
+			<s>"Last_Critical_Error"</s>
+			<s>""</s>
+			<i>1</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>64</i>
+			<s>" "</s>
+			<s>"Last_Device_Detection"</s>
+			<s>".Injector_Properties"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>"[EDD].Local.EDD_XML.EDD_XML"</s>
+			<s>"Last_Device_Detection"</s>
+			<s>""</s>
+			<i>1</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>64</i>
+			<s>" "</s>
+			<s>"SRU_ID"</s>
+			<s>".Injector_Properties"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>"[EDD].Local.EDD_XML.EDD_XML"</s>
+			<s>"SRU_ID"</s>
+			<s>""</s>
+			<i>1</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		</PointerList>
+		</CTagGroup>
+	<CTagGroup>
+		<s>"VirtualCare"</s>
+		<i>0</i>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+		<s>""</s>
+	<PointerList>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>192</i>
+			<s>"Acknowledged"</s>
+			<s>"RequestSupportOther"</s>
+			<s>".VirtualCare"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<i>0</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		<CTag>
+			<r>"0.000000000000000"</r>
+			<r>"0.000000000000000"</r>
+			<i>3</i>
+			<i>192</i>
+			<s>"Acknowledged"</s>
+			<s>"RequestSupportTechnical"</s>
+			<s>".VirtualCare"</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<s>""</s>
+			<i>0</i>
+			<i>7</i>
+			<i>0</i>
+			<i>1</i>
+		</CTag>
+		</PointerList>
+		</CTagGroup>
+</PointerList>
+<PointerList>
+</PointerList>
+</PersistedData>

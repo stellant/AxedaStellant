@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData TerseType="1">
+<i>1</i>
+<ow>
+</ow>
+	<ModelAliases>
+	</ModelAliases>
+<AutoDiscoveryPlugIns>
+	<SNMP DLL="EEDDSNMPDriver" File="xgDiscovery" ScanPeriod="60" DeviceTimeout="10" enabled="true"/>
+</AutoDiscoveryPlugIns>
+</PersistedData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<APMProxyConfig>
+	<v>1</v>
+	<Debug>0</Debug>
+	<PingRate>120</PingRate >
+	<AskPingRate>15</AskPingRate>
+	<OfflineRetryRate>300</OfflineRetryRate>
+	<AuditLogMaxSize>150</AuditLogMaxSize>
+	<ServletPath>message</ServletPath>
+	<URL></URL>
+	<Port>80</Port >
+	<APMEnable>false</APMEnable >
+	<SyslogEnable>false</SyslogEnable>
+	<HTTPPersistence>off</HTTPPersistence >
+	</APMProxyConfig>

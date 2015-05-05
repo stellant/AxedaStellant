@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<StateBasedMonitoring>
+<Debug>0</Debug>
+<Persistence interval="30" />
+<Monitors>
+</Monitors>
+
+</StateBasedMonitoring>

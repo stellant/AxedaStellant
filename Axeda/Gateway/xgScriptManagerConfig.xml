@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="yes"?>
+<ScriptManagerConfig>
+<Debug>0</Debug>
+<MaxRunningScripts>64</MaxRunningScripts>
+</ScriptManagerConfig>

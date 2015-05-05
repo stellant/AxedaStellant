@@ -1,0 +1,8 @@
+[REGISTER]
+
+
+
+[RUN]
+/sbin/reboot -f 
+
+[UNREGISTER]

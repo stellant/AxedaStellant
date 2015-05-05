@@ -1,0 +1,62 @@
+#!/bin/sh
+# chkconfig: 2345 26 74
+### BEGIN INIT INFO
+# Provides:          xGate
+# Required-Start:   
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start Axeda Gateway at Start Up
+# Description:       Start Axeda Gateway at Startup of Timesys
+# X-Start-Before:    
+# X-Stop-After:      
+# X-Timesys-Start-Number:  26
+# X-Timesys-Stop-Number:  74
+### END INIT INFO
+
+PATH=/usr/bin:/bin:/usr/sbin:/sbin
+
+stop_service() {
+    
+	echo "Stopping Axeda Agent"
+
+
+	
+
+	cd /home/Axeda/Gateway/
+	echo "127.0.0.1" >> IP
+	./EShutdown < IP
+	rm -f IP
+
+}
+
+start_service() {
+
+	echo "Starting Axeda Agent"
+
+
+	cd /home/Axeda/Gateway/
+	./xGate&
+
+	
+}
+
+case $1 in
+
+'start')
+    start_service
+    ;;
+
+'stop')
+    stop_service
+    ;;
+
+'restart')
+    stop_service
+    start_service
+    ;;
+
+*)
+    echo "Usage: $0 [start|stop|restart]"
+    ;;
+esac

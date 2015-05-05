@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData moduleName= "RCon" TerseType="1">
+<v>3</v>
+<Application name="Desktop" launch="desktop">
+	<Comment>
+	 Remote Desktop Application 
+	</Comment>
+	<Hostname>
+	 127.0.0.1 
+	</Hostname>
+	<Port type="connect">
+	 5920 
+	</Port>
+</Application>
+
+<Application name="VC_Browser" launch="browser">
+	<Comment>
+	  
+	</Comment>
+	<Hostname>
+	 127.0.0.1 
+	</Hostname>
+	<Port type="connect">
+	 8085 
+	</Port>
+<Browser secure="false" absPath=""/>
+</Application>
+
+</PersistedData>

@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData moduleName="xgNotify" TerseType="1">
+<i>1</i>
+<i>5</i>
+<s>"Log Reports of Events to a File"</s>
+<s>"OnLogEvent"</s>
+<s>""</s>
+<i>1</i>
+<s>"DoLogEventToFile"</s>
+<s>"KernelLog"</s>
+<i>0</i>
+<s>"EnterpriseOffline"</s>
+<s>"OnEnterpriseServerOffline"</s>
+<s>""</s>
+<i>2</i>
+<s>"DoDataItemWrite"</s>
+<s>"ConnectivityStatus"</s>
+<i>1</i>
+<s>"Data Items"</s>
+<i>3</i>
+<s>"ConnectivityStatus"</s>
+<s>"DoErrorLog"</s>
+<s>""</s>
+<i>2</i>
+<s>"Value"</s>
+<i>3</i>
+<s>"EnterpriseOffline"</s>
+<s>"Value"</s>
+<i>1</i>
+<r>"0.000000000000000"</r>
+<s>"EnterpriseOnline"</s>
+<s>"OnEnterpriseServerOnline"</s>
+<s>""</s>
+<i>1</i>
+<s>"DoDataItemWrite"</s>
+<s>"ConnectivityStatus"</s>
+<i>1</i>
+<s>"Data Items"</s>
+<i>3</i>
+<s>"ConnectivityStatus"</s>
+<s>"LogicFileUpload"</s>
+<s>"OnTimer"</s>
+<s>"Log_Upload_Timer"</s>
+<i>1</i>
+<s>"DoSMUpload"</s>
+<s>"21_Upgrade"</s>
+<i>0</i>
+<s>"AlarmLogger_Notify"</s>
+<s>"OnAlarm"</s>
+<s>""</s>
+<i>1</i>
+<s>"DoLogAlarm"</s>
+<s>"AlarmLogger_Logger"</s>
+<i>0</i>
+</PersistedData>

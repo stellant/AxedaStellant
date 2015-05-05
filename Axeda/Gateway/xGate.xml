@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData TerseType="1">
+<i>13</i>
+<i>1</i>
+<s>"DefaultProject"</s>
+<i>0</i>
+<i>0</i>
+<s>"English"</s>
+<i>1</i>
+<PointerList>
+	<s>
+		<s>"xgAlarm"</s>
+	</s>
+	<s>
+		<s>"xgAPMProxy"</s>
+	</s>
+	<s>
+		<s>"xgAuthProxy"</s>
+	</s>
+	<s>
+		<s>"xgDeploy"</s>
+	</s>
+	<s>
+		<s>"xgEDDSrc"</s>
+	</s>
+	<s>
+		<s>"xgEmail"</s>
+	</s>
+	<s>
+		<s>"xgEnterpriseProxy"</s>
+	</s>
+	<s>
+		<s>"xgExpression"</s>
+	</s>
+	<s>
+		<s>"xgFileWatch"</s>
+	</s>
+	<s>
+		<s>"xgLogFile"</s>
+	</s>
+	<s>
+		<s>"xgLogger"</s>
+	</s>
+	<s>
+		<s>"xgRCon"</s>
+	</s>
+	<s>
+		<s>"xgScriptManager"</s>
+	</s>
+	<s>
+		<s>"xgSM"</s>
+	</s>
+	<s>
+		<s>"xgTag"</s>
+	</s>
+	<s>
+		<s>"xgTimer"</s>
+	</s>
+	<s>
+		<s>"xgWeb"</s>
+	</s>
+	<s>
+		<s>"xgWebService"</s>
+	</s>
+	<s>
+		<s>"xgPKIManager"</s>
+	</s>
+	<s>
+		<s>"xGateway"</s>
+	</s>
+</PointerList>
+<i>1</i>
+<i>1</i>
+</PersistedData>

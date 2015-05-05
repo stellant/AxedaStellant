@@ -1,0 +1,77 @@
+<?xml version="1.0" standalone="yes"?>
+<PersistedData moduleName="EFileWatcher" TerseType="1">
+
+<!--	filewatchschema: container for watched objects
+	supported attributes:
+		- name (mandatory): schema name
+		- action (optional): type of action performed on file change:
+		* "none": no action is taken
+		* "upload" (default): file is uploaded
+		- transient (optional): indicates whether watched files must
+		be deleted when the action is completed:
+		* "no" (default)
+		* "yes"
+		initialaction (optional): defines whether the action must be
+		performed on existing non-transient files when Agent
+		starts:
+		* "no" (default)
+		* "yes"
+		- method (optional): method used to determine whether file is
+		changed:
+		* "timesize" (default): file modification time + size
+		- changenotify (optional): mechanism used to notify about file
+		changes:
+		* "none" (default)
+		* "event"
+		* "alarm"
+		- missingnotify (optional): mechanism used to notify that file
+		is missing:
+		* "none" (default)
+		* "event"
+		* "alarm"
+	-->
+
+<filewatchschema
+name="EnterpriseXfer"
+action="upload"
+transient="yes"
+initialaction="no"
+skipuploadcompression="no"
+method="timesize"
+changenotify="none"
+missingnotify="none"
+hint="General"
+missingseverity="10"
+changeseverity="10"
+delay="0">
+
+<!--	directory: watched directory (i.e. files inside the directory are watched
+	supported attributes:
+		- name (mandatory): absolute or relative path
+		- optional attributes of filewatchschema: may be overriden here
+		- recursive (optional): subdirectores are watched recursively,
+		when true:
+		* "no" (default)
+		* "yes"
+		- pattern (optional): shell expression. Only matched files are
+		watched. 
+		Default is all files
+	-->
+
+<directory
+	name="c:\Axeda\Gateway\EnterpriseTransfer\"
+	pattern="*"
+	recursive="no"/>
+<directory
+	name="c:\Axeda\Gateway\EnterpriseTransfers\"
+	pattern="*"
+	recursive="no"/>
+<!--	file: watched file
+	supported attributes:
+		- name (mandatory): absolute or relative path
+		- optional attributes of filewatchschema: may be overriden here
+	-->
+
+	
+</filewatchschema>
+</PersistedData>
